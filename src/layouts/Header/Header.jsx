@@ -1,6 +1,7 @@
 import './Header.scss'
 import Logo from '@/components/Logo'
 import clsx from 'clsx'
+import { Socials } from '@/components/Socials'
 
 export default (props) => {
   const { url } = props
@@ -34,6 +35,7 @@ export default (props) => {
             ))}
           </ul>
         </nav>
+        <Socials />
       </div>
     </header>
   )

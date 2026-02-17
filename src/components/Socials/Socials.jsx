@@ -1,5 +1,6 @@
 import './Socials.scss'
 import clsx from 'clsx'
+import { Icon } from 'minista'
 
 export const Socials = (props) => {
   const { className } = props
@@ -10,5 +11,18 @@ export const Socials = (props) => {
     { label: 'Instagram', icon: 'instagram' },
   ]
 
-  return <div className={clsx('soc1als', className)}>Socials</div>
+  return (
+    <div className={clsx('soc1als', className)}>
+      <ul className="soc1als__list">
+        {links.map(({ label, icon }) => (
+          <li className="soc1als__item" key={label}>
+            <a className="soc1als__link" href="/" title={label}>
+              <span className="visually-hidden">{label}</span>
+              <Icon name={icon} iconId={label} />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
 }
