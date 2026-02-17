@@ -19,5 +19,11 @@
         column-gap: 30px;
       }
     }
+
+    &__link {
+      display: inline-flex;
+      align-items: center;
+      height: 44px;
+    }
   }
 }
