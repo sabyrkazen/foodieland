@@ -1,6 +1,6 @@
 import './Socials.scss'
 import clsx from 'clsx'
-import { Icon } from 'minista'
+import { Icon } from '@/components/Icon'
 
 export const Socials = (props) => {
   const { className } = props
@@ -18,7 +18,7 @@ export const Socials = (props) => {
           <li className="soc1als__item" key={label}>
             <a className="soc1als__link" href="/" title={label}>
               <span className="visually-hidden">{label}</span>
-              <Icon name={icon} iconId={label} />
+              <Icon name={icon} hasFill />
             </a>
           </li>
         ))}

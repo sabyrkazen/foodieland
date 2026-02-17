@@ -2,7 +2,7 @@ import './Icon.scss'
 import clsx from 'clsx'
 import { Icon as MinistaIcon } from 'minista'
 
-export default (props) => {
+export const Icon = (props) => {
   const { className, name, hasFill = false, ariaLabel } = props
 
   return (
