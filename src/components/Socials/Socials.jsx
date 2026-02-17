@@ -1,8 +1,14 @@
+import './Socials.scss'
 import clsx from 'clsx'
-import styles from './Socials.module.scss'
 
 export const Socials = (props) => {
   const { className } = props
 
-  return <div className={clsx(styles.soc1als, className)}>Socials</div>
+  const links = [
+    { label: 'Facebook', icon: 'facebook' },
+    { label: 'Twitter', icon: 'twitter' },
+    { label: 'Instagram', icon: 'instagram' },
+  ]
+
+  return <div className={clsx('soc1als', className)}>Socials</div>
 }
