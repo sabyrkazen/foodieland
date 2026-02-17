@@ -1,24 +1,14 @@
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
-
   --color-accent: #e50000;
+  --color-gray: rgb(0 0 0 / 0.1);
 
-  --color-gray: #808080;
+  --gradient: linear-gradient(180deg, rgb(231 249 253 / 0) 0%, #e7f9fd 100%);
 
-  --border: var(--border-width-m) solid var(--color-accent);
-
-  --border-width-xl: 6px;
-  --border-width-l: 4px;
-  --border-width-m: 3px;
-  --border-width-s: 1px;
-
-  --border-radius-l: 12px;
-  --border-radius-m: 10px;
-  --border-radius: 8px;
-  --border-radius-xs: 6px;
-  --border-radius-xxs: 5px;
-  --border-radius-xxxs: 4px;
+  --border-radius-m: 60px;
+  --border-radius: 30px;
+  --border-radius-xs: 16px;
 
   --font-family-base: 'Manrope';
 
