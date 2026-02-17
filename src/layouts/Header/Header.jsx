@@ -37,7 +37,7 @@ export default (props) => {
           </ul>
         </nav>
         <Socials className="header__soc1als" />
-        <BurgerButton className="visible-mobile" />
+        <BurgerButton className="header__burger-button visible-mobile" />
       </div>
     </header>
   )

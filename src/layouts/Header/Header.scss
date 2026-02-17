@@ -55,4 +55,8 @@
       margin-left: auto;
     }
   }
+
+  &__burger-button {
+    z-index: var(--layer-mobile-menu);
+  }
 }
