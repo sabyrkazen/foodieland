@@ -1,15 +1,25 @@
 .header {
-  padding-block: 32px;
+  padding-block: #{fluid(32, 16)};
   border-bottom: 1px solid var(--color-gray);
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 20px;
+    column-gap: 30px;
   }
 
   &__menu {
+    @include mobile {
+      position: fixed;
+      inset: 0;
+      background-image: var(--gradient);
+
+      &:not(.is-active) {
+        @include hide;
+      }
+    }
+
     &-list {
       display: flex;
       align-items: center;
@@ -18,12 +28,23 @@
       @include tablet {
         column-gap: 30px;
       }
+
+      @include mobile {
+        flex-direction: column;
+        row-gap: 10px;
+      }
     }
 
     &__link {
       display: inline-flex;
       align-items: center;
       height: 44px;
+    }
+  }
+
+  &__soc1als {
+    @include mobile {
+      margin-left: auto;
     }
   }
 }
