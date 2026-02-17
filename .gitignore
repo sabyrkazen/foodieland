@@ -1,2 +1,11 @@
-.idea
-.DS_Store
+node_modules/
+.env*
+.vscode/
+.idea/
+*.code-workspace
+dist/
+build/
+*.log
+.cache/
+*.tmp
+*.DS_Store
