@@ -16,7 +16,7 @@ export default (props) => {
 
   return (
     <header className="header">
-      <div className="header__inner inner">
+      <div className="header__inner container">
         <Logo className="header__logo" />
         <nav className="header__menu">
           <ul className="header__menu-list">
