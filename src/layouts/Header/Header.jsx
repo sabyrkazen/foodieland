@@ -1,6 +1,6 @@
 import './Header.scss'
 import clsx from 'clsx'
-import Logo from '@/components/Logo'
+import { Logo } from '@/components/Logo'
 import { Socials } from '@/components/Socials'
 import { BurgerButton } from '@/components/BurgerButton'
 
