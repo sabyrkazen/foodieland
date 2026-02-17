@@ -1,3 +1,7 @@
 .logo {
   width: 110px;
+
+  &__image {
+    flex-shrink: 0;
+  }
 }
