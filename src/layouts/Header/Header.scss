@@ -16,8 +16,12 @@
   &__menu {
     @include mobile {
       position: fixed;
+      z-index: var(--layer-mobile-menu);
       inset: 0;
-      background-image: var(--gradient);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-image: var(--color-white);
 
       &:not(.is-active) {
         @include hide;
