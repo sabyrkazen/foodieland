@@ -1,7 +1,7 @@
 import './BurgerButton.scss'
 import clsx from 'clsx'
 
-export default (props) => {
+export const BurgerButton = (props) => {
   const { className, extraAttrs } = props
 
   const title = 'Open menu'

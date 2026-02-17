@@ -1,7 +1,8 @@
 import './Header.scss'
-import Logo from '@/components/Logo'
 import clsx from 'clsx'
+import Logo from '@/components/Logo'
 import { Socials } from '@/components/Socials'
+import { BurgerButton } from '@/components/BurgerButton'
 
 export default (props) => {
   const { url } = props
@@ -36,6 +37,7 @@ export default (props) => {
           </ul>
         </nav>
         <Socials />
+        <BurgerButton className="visible-mobile" />
       </div>
     </header>
   )
