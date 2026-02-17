@@ -12,7 +12,12 @@
   &__menu {
     &-list {
       display: flex;
+      align-items: center;
       column-gap: 60px;
+
+      @include tablet {
+        column-gap: 30px;
+      }
     }
   }
 }
