@@ -25,6 +25,8 @@
   }
 
   &__title {
+    @include fluid-text(64, 28);
+
     &:not(:last-child) {
       margin-bottom: 24px;
     }
