@@ -1,3 +1,7 @@
 .hero {
   padding-block: 50px;
+
+  &__slider-item {
+    max-width: var(--container-width);
+  }
 }
