@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import { Image } from 'minista'
 import { Icon } from '@/components/Icon'
 import { AuthorCard } from '@/components/AuthorCard'
+import { Button } from '@/components/Button'
 
 export const HeroCard = ({
   className,
@@ -37,6 +38,10 @@ export const HeroCard = ({
         </div>
         <footer className="hero-card__footer">
           <AuthorCard className="hero-card__author" {...author} />
+          <Button className="hero-card__button">
+            <span>View Recipes</span>
+            <Icon name="play" />
+          </Button>
         </footer>
       </div>
       <Image
