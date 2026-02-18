@@ -7,6 +7,11 @@
     background-color: var(--color-light-blue);
   }
 
+  &__image {
+    height: 100%;
+    object-fit: cover;
+  }
+
   &__category {
     display: inline-flex;
     align-items: center;
