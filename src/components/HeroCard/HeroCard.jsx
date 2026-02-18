@@ -30,8 +30,8 @@ export const HeroCard = ({
           <ul className="hero-card__tags-list">
             {tags.map(({ icon, label }) => (
               <li className="hero-card__tags-item" key={label}>
-                <Icon name={icon} />
-                <span>{label}</span>
+                <Icon name={icon} hasFill />
+                <span className="hero-card__tags-label">{label}</span>
               </li>
             ))}
           </ul>
@@ -40,7 +40,7 @@ export const HeroCard = ({
           <AuthorCard className="hero-card__author" {...author} />
           <Button className="hero-card__button" href="/recipes">
             <span>View Recipes</span>
-            <Icon name="play" />
+            <Icon name="play" hasFill />
           </Button>
         </footer>
       </div>
