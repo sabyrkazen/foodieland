@@ -1,0 +1,26 @@
+.author-card {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+
+  &__image {
+    height: auto;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__date {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-gray-600);
+  }
+}
