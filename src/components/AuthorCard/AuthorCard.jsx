@@ -1,9 +1,7 @@
 import clsx from 'clsx'
 import { Image } from 'minista'
 
-export const AuthorCard = (props) => {
-  const { className, imgSrc, name, date } = props
-
+export const AuthorCard = ({ className, imgSrc, name, date }) => {
   return (
     <div className={clsx('author-card', className)}>
       <Image className="author-card__image" src={imgSrc} />

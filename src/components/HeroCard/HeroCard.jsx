@@ -37,7 +37,7 @@ export const HeroCard = (props) => {
           </ul>
         </div>
         <footer className="hero-card__footer">
-          <AuthorCard />
+          <AuthorCard className="hero-card__author" {...author} />
         </footer>
       </div>
       <Image className="hero-card__image" src={imgSrc} />
