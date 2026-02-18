@@ -3,18 +3,16 @@ import { Icon } from '@/components/Icon'
 import { Image } from 'minista'
 import { AuthorCard } from '@/components/AuthorCard'
 
-export const HeroCard = (props) => {
-  const {
-    className,
-    category,
-    title,
-    TitleTag = 'h2',
-    description,
-    tags,
-    author,
-    imgSrc,
-  } = props
-
+export const HeroCard = ({
+  className,
+  category,
+  title,
+  TitleTag = 'h2',
+  description,
+  tags,
+  author,
+  imgSrc,
+}) => {
   return (
     <div className={clsx('hero-card', className)}>
       <div className="hero-card__body">
