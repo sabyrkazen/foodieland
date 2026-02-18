@@ -4,9 +4,7 @@ import { Logo } from '@/components/Logo'
 import { Socials } from '@/components/Socials'
 import { BurgerButton } from '@/components/BurgerButton'
 
-export default (props) => {
-  const { url } = props
-
+export default ({ url }) => {
   const menuItems = [
     { label: 'Home', href: '/' },
     { label: 'Recipes', href: '/recipes' },
