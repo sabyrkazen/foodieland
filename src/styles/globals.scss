@@ -14,19 +14,22 @@ body {
 }
 
 h1,
-.h1 {
-  @include fluid-text(64, 28);
-
+.h1,
+h2,
+.h2 {
   font-weight: 600;
   line-height: 1.2;
-  letter-spacing: -4px;
+  letter-spacing: -0.04em;
+}
+
+h1,
+.h1 {
+  @include fluid-text(64, 28);
 }
 
 h2,
 .h2 {
   @include fluid-text(48, 24);
-
-  font-weight: 700;
 }
 
 h3,
