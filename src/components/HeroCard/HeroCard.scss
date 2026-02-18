@@ -20,4 +20,16 @@
       margin-bottom: 32px;
     }
   }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__description {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
