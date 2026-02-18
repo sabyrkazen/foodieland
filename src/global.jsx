@@ -8,9 +8,7 @@ import favicon32 from '@/assets/favicons/favicon-32x32.png'
 import favicon16 from '@/assets/favicons/favicon-16x16.png'
 import manifest from '@/assets/favicons/site.webmanifest'
 
-export default (props) => {
-  const { children, title, url } = props
-
+export default ({ children, title, url }) => {
   return (
     <>
       <Head htmlAttributes={{ lang: 'en' }}>
