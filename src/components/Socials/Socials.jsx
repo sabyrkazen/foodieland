@@ -2,9 +2,7 @@ import './Socials.scss'
 import clsx from 'clsx'
 import { Icon } from '@/components/Icon'
 
-export const Socials = (props) => {
-  const { className } = props
-
+export const Socials = ({ className }) => {
   const links = [
     { label: 'Facebook', icon: 'facebook' },
     { label: 'Twitter', icon: 'twitter' },
