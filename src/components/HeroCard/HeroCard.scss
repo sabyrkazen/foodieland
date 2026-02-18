@@ -11,10 +11,13 @@
 
   &__category {
     display: inline-flex;
+    align-items: center;
     column-gap: 12px;
     padding: 10px 20px;
     border-radius: var(--border-radius);
     background-color: var(--color-white);
+    font-weight: 600;
+    font-size: 14px;
 
     &:not(:last-child) {
       margin-bottom: 32px;
