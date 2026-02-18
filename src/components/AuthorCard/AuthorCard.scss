@@ -1,7 +1,7 @@
 .author-card {
   display: flex;
-  column-gap: 16px;
   align-items: center;
+  column-gap: 16px;
 
   &__image {
     height: auto;
@@ -13,13 +13,13 @@
   }
 
   &__name {
-    font-weight: 700;
     font-size: 16px;
+    font-weight: 700;
   }
 
   &__date {
-    font-weight: 500;
     font-size: 14px;
+    font-weight: 500;
     color: var(--color-gray-600);
   }
 }

@@ -12,11 +12,11 @@
     align-items: center;
     column-gap: 12px;
     padding: 10px 20px;
-    border-radius: var(--border-radius);
-    background-color: var(--color-white);
-    box-shadow: var(--drop-shadow);
-    font-weight: 600;
     font-size: 14px;
+    font-weight: 600;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--drop-shadow);
 
     &:not(:last-child) {
       margin-bottom: 32px;
@@ -32,8 +32,8 @@
   }
 
   &__description {
-    color: var(--color-gray-600);
     line-height: 1.75;
+    color: var(--color-gray-600);
 
     &:not(:last-child) {
       margin-bottom: 30px;
