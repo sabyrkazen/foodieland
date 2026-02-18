@@ -8,7 +8,7 @@ export const Hero = () => {
         className="hero__slider swiper"
         data-js-slider={JSON.stringify({
           spaceBetween: 40,
-          slidesPerView: 1,
+          slidesPerView: 'auto',
           centeredSlides: true,
         })}
       >
