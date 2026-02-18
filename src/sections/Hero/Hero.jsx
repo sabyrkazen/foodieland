@@ -34,7 +34,7 @@ export const Hero = () => {
                   label: '15 March 2022',
                 },
               }}
-              imgSrc="/src/assets/images/slider-bg.png"
+              imgSrc="/src/assets/images/slider-bg.jpg"
             />
           </li>
           <li className="hero__slider-item swiper-slide">
@@ -59,7 +59,7 @@ export const Hero = () => {
                   label: '15 March 2022',
                 },
               }}
-              imgSrc="/src/assets/images/slider-bg.png"
+              imgSrc="/src/assets/images/slider-bg.jpg"
             />
           </li>
           <li className="hero__slider-item swiper-slide">
@@ -83,7 +83,7 @@ export const Hero = () => {
                   label: '15 March 2022',
                 },
               }}
-              imgSrc="/src/assets/images/slider-bg.png"
+              imgSrc="/src/assets/images/slider-bg.jpg"
             />
           </li>
         </ul>

@@ -1,6 +1,7 @@
+import './HeroCard.scss'
 import clsx from 'clsx'
-import { Icon } from '@/components/Icon'
 import { Image } from 'minista'
+import { Icon } from '@/components/Icon'
 import { AuthorCard } from '@/components/AuthorCard'
 
 export const HeroCard = ({
@@ -38,7 +39,12 @@ export const HeroCard = ({
           <AuthorCard className="hero-card__author" {...author} />
         </footer>
       </div>
-      <Image className="hero-card__image" src={imgSrc} />
+      <Image
+        className="hero-card__image"
+        src={imgSrc}
+        width={660}
+        height={640}
+      />
     </div>
   )
 }

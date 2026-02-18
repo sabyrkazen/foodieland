@@ -1,0 +1,11 @@
+.hero-card {
+  display: grid;
+  grid-template-columns: 48.4375% 1fr;
+  border-radius: var(--border-radius-m);
+  overflow: hidden;
+
+  &__body {
+    padding: 50px;
+    background-color: var(--color-light-blue);
+  }
+}
