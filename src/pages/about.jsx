@@ -4,7 +4,7 @@ export const metadata = {
   title: 'About',
 }
 
-export const AboutPage = () => {
+export default () => {
   return (
     <>
       <h1>About page</h1>

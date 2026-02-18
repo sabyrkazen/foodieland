@@ -4,7 +4,7 @@ export const metadata = {
   title: 'Home',
 }
 
-export const HomePage = () => {
+export default () => {
   return (
     <>
       <Hero />
