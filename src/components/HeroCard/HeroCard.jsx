@@ -38,7 +38,7 @@ export const HeroCard = ({
         </div>
         <footer className="hero-card__footer">
           <AuthorCard className="hero-card__author" {...author} />
-          <Button className="hero-card__button">
+          <Button className="hero-card__button" href="/recipes">
             <span>View Recipes</span>
             <Icon name="play" />
           </Button>
