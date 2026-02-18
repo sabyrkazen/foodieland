@@ -10,6 +10,7 @@ export const Hero = () => {
           spaceBetween: 40,
           slidesPerView: 'auto',
           centeredSlides: true,
+          initialSlide: 1,
         })}
       >
         <ul className="hero__slider-list swiper-wrapper">
