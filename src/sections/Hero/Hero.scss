@@ -1,7 +1,11 @@
 .hero {
+  max-width: 1920px;
+  margin-inline: auto;
   padding-block: 50px;
 
   &__slider-item {
     max-width: var(--container-width);
+    border-radius: var(--border-radius-m);
+    overflow: hidden;
   }
 }

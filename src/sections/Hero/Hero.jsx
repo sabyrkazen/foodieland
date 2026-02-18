@@ -11,6 +11,7 @@ export const Hero = () => {
           slidesPerView: 'auto',
           centeredSlides: true,
           initialSlide: 1,
+          effect: 'coverflow',
         })}
       >
         <ul className="hero__slider-list swiper-wrapper">
