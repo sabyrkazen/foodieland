@@ -21,7 +21,6 @@ export const Hero = () => {
                 label: 'Hot Recipes',
               }}
               title="Spicy delicious chicken wings"
-              TitleTag="h1"
               description="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim "
               tags={[
                 { icon: 'clock', label: '30 Minutes' },
@@ -46,6 +45,7 @@ export const Hero = () => {
                 label: 'Hot Recipes',
               }}
               title="Spicy delicious chicken wings"
+              TitleTag="h1"
               description="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim "
               tags={[
                 { icon: 'clock', label: '30 Minutes' },
