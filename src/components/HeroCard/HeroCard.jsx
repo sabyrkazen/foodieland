@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import { Icon } from '@/components/Icon'
 import { Image } from 'minista'
+import { AuthorCard } from '@/components/AuthorCard'
 
 export const HeroCard = (props) => {
   const {
@@ -36,7 +37,7 @@ export const HeroCard = (props) => {
           </ul>
         </div>
         <footer className="hero-card__footer">
-
+          <AuthorCard />
         </footer>
       </div>
       <Image className="hero-card__image" src={imgSrc} />

@@ -1,0 +1,16 @@
+import clsx from 'clsx'
+import { Image } from 'minista'
+
+export const AuthorCard = (props) => {
+  const { className, imgSrc, name, date } = props
+
+  return (
+    <div className={clsx('author-card', className)}>
+      <Image className="author-card__image" src={imgSrc} />
+      <h2 className="author-card__name">{name}</h2>
+      <time className="author-card__date" dateTime={date.dateTime}>
+        {date.label}
+      </time>
+    </div>
+  )
+}
