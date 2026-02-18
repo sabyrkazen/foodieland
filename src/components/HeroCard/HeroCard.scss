@@ -32,4 +32,14 @@
       margin-bottom: 30px;
     }
   }
+
+  &__tags {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__footer {
+    margin-top: auto;
+  }
 }
