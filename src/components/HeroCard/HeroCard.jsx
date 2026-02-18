@@ -50,6 +50,14 @@ export const HeroCard = ({
         width={660}
         height={640}
       />
+      <img
+        className="hero-card__badge"
+        src="/images/badge.svg"
+        alt="Handpicked Recipes"
+        width={150}
+        height={150}
+        loading="lazy"
+      />
     </div>
   )
 }
