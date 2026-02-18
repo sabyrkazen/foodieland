@@ -1,9 +1,7 @@
 import './Logo.scss'
 import clsx from 'clsx'
 
-export const Logo = (props) => {
-  const { className, loading = 'lazy' } = props
-
+export const Logo = ({ className, loading = 'lazy' }) => {
   const title = 'Home'
 
   return (
