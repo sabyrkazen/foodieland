@@ -111,10 +111,4 @@
       row-gap: 20px;
     }
   }
-
-  &__button {
-    @include laptop-s {
-      justify-content: center;
-    }
-  }
 }

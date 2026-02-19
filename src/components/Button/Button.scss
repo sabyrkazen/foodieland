@@ -1,8 +1,10 @@
 .button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   column-gap: 15px;
-  padding: 18px 36px;
+  min-width: 200px;
+  height: 60px;
   color: var(--color-white);
   font-size: 14px;
   font-weight: 600;
