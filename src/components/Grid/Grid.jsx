@@ -1,9 +1,14 @@
 import './Grid.scss'
+import clsx from 'clsx'
 
-export const Grid = () => {
+export const Grid = ({ className, children, columns }) => {
   return (
-    <div>
-      Grid
-    </div>
+    <ul className={clsx(`grid grid--${columns}`, className)}>
+      {children.map((child, index) => (
+        <li key={index}>
+          {child}
+        </li>
+      ))}
+    </ul>
   )
 }
