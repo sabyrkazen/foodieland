@@ -13,6 +13,6 @@
   }
 
   &__image {
-    margin-top: calc(var(--categoryCardImageOffsetTop) * -1);
+    margin-top: calc(-1 * var(--categoryCardImageOffsetTop));
   }
 }
