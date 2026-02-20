@@ -1,9 +1,17 @@
-import './Section.scss'
 import clsx from 'clsx'
 
-export default (props) => {
-  const { className, title, titleId, description, children } = props
+import { Button } from '@/components/Button'
 
+import './Section.scss'
+
+export default ({
+  className,
+  title,
+  titleId,
+  description,
+  linkLabel,
+  children,
+}) => {
   return (
     <section
       className={clsx('section', 'container', className)}
@@ -17,6 +25,11 @@ export default (props) => {
           <div className="section__description">
             <p>{description}</p>
           </div>
+        )}
+        {linkLabel && (
+          <Button className="section__link" href="/">
+            {linkLabel}
+          </Button>
         )}
       </header>
       <div className="section__body">{children}</div>
