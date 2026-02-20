@@ -5,7 +5,9 @@
   grid-template-columns: repeat(var(--gridColumns), 1fr);
   gap: fluid(40, 20);
 
-  &--6 {
-    --gridColumns: 6;
+  @for $i from 2 through 12 {
+    &--#{$i} {
+      --gridColumns: #{$i};
+    }
   }
 }
