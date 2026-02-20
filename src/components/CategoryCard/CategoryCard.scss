@@ -1,12 +1,10 @@
 .category-card {
-  --imageOffsetTop: -50px;
-
   position: relative;
   width: 180px;
   height: 152px;
   padding-inline: 40px;
   padding-bottom: 30px;
-  margin-top: var(--imageOffsetTop);
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +14,6 @@
 
   &__image {
     position: absolute;
-    top: var(--imageOffsetTop);
+    top: -50px;
   }
 }
