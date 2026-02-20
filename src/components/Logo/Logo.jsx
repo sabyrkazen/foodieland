@@ -1,5 +1,6 @@
-import './Logo.scss'
 import clsx from 'clsx'
+
+import './Logo.scss'
 
 export const Logo = ({ className, loading = 'lazy' }) => {
   const title = 'Home'

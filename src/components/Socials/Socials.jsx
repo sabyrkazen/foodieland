@@ -1,6 +1,8 @@
-import './Socials.scss'
 import clsx from 'clsx'
+
 import { Icon } from '@/components/Icon'
+
+import './Socials.scss'
 
 export const Socials = ({ className }) => {
   const links = [

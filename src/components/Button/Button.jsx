@@ -1,5 +1,6 @@
-import './Button.scss'
 import clsx from 'clsx'
+
+import './Button.scss'
 
 export const Button = ({ className, type = 'button', href, children }) => {
   const isLink = href !== undefined

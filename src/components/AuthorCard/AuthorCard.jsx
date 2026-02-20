@@ -1,6 +1,7 @@
-import './AuthorCard.scss'
 import clsx from 'clsx'
 import { Image } from 'minista'
+
+import './AuthorCard.scss'
 
 export const AuthorCard = ({ className, imgSrc, name, date }) => {
   return (

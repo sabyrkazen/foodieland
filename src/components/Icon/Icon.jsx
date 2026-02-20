@@ -1,6 +1,7 @@
-import './Icon.scss'
 import clsx from 'clsx'
 import { Icon as MinistaIcon } from 'minista'
+
+import './Icon.scss'
 
 export const Icon = ({ className, name, hasFill = false, ariaLabel }) => {
   return (

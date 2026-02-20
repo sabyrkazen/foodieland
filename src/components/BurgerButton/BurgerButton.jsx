@@ -1,5 +1,6 @@
-import './BurgerButton.scss'
 import clsx from 'clsx'
+
+import './BurgerButton.scss'
 
 export const BurgerButton = ({ className, extraAttrs }) => {
   const title = 'Open menu'

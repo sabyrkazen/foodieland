@@ -1,5 +1,6 @@
-import './Hero.scss'
 import { HeroCard } from '@/components/HeroCard'
+
+import './Hero.scss'
 
 export const Hero = () => {
   return (

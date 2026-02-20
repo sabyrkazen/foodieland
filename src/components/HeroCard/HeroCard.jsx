@@ -1,9 +1,11 @@
-import './HeroCard.scss'
 import clsx from 'clsx'
 import { Image } from 'minista'
+
 import { Icon } from '@/components/Icon'
 import { AuthorCard } from '@/components/AuthorCard'
 import { Button } from '@/components/Button'
+
+import './HeroCard.scss'
 
 export const HeroCard = ({
   className,
