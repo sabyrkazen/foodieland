@@ -1,7 +1,7 @@
 .hero {
   max-width: 1920px;
   margin-inline: auto;
-  padding: 50px var(--container-padding-x);
+  padding: var(--section-padding-y) var(--container-padding-x);
 
   @include tablet {
     padding-block: 20px;
