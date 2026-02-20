@@ -27,7 +27,7 @@ export default ({
           </div>
         )}
         {linkLabel && (
-          <Button className="section__link" href="/">
+          <Button className="section__link" href="/" mode="light-blue">
             {linkLabel}
           </Button>
         )}

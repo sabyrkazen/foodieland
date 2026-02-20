@@ -16,4 +16,8 @@
     color: var(--color-black);
     background-color: var(--color-white);
   }
+
+  &--light-blue {
+    background-color: var(--color-secondary);
+  }
 }
