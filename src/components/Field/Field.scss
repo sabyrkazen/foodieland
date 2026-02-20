@@ -7,7 +7,7 @@
   &__label {
     font-size: fluid-to-laptop(18, 16);
     font-weight: 700;
-    color: var(--color-white);
+    color: var(--color-light);
   }
 
   &__required-star {
@@ -19,9 +19,9 @@
     max-width: 300px;
     height: fluid-to-laptop(67, 53);
     padding-inline: fluid-to-laptop(20, 16);
-    color: var(--color-white);
-    background-color: var(--color-black);
-    border: var(--border-width-m) solid var(--color-white);
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border: var(--border-width-m) solid var(--color-light);
     border-radius: var(--border-radius);
 
     @include laptop {
@@ -29,7 +29,7 @@
     }
 
     @include hover {
-      border-color: var(--color-white);
+      border-color: var(--color-light);
     }
 
     &:user-invalid {

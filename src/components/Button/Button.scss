@@ -5,19 +5,26 @@
   column-gap: 15px;
   min-width: 200px;
   height: 60px;
-  color: var(--color-white);
+  color: var(--color-light);
   font-size: 14px;
   font-weight: 600;
-  background-color: var(--color-black);
-  border: 2px solid var(--color-black);
+  background-color: var(--color-dark);
+  border: 2px solid var(--color-dark);
   border-radius: var(--border-radius-s);
 
   @include hover {
-    color: var(--color-black);
-    background-color: var(--color-white);
+    color: var(--color-dark);
+    background-color: var(--color-light);
   }
 
   &--light-blue {
+    color: var(--color-dark);
     background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+
+    @include hover {
+      color: var(--color-light);
+      background-color: var(--color-dark);
+    }
   }
 }
