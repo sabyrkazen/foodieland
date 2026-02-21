@@ -1,5 +1,3 @@
-import { Image } from 'minista'
-
 import { Section } from '@/layouts/Section'
 
 export default () => {
