@@ -24,9 +24,14 @@ export default defineConfig({
 
     // Картинки (оптимизируются и ресайзятся при сборке)
     images: {
+      outDir: 'assets/images',
+      outName: '[name]',
+      remoteName: 'remote',
       optimize: {
         layout: 'constrained',
-        breakpoints: [360, 640, 1024, 1440],
+        breakpoints: [
+          360, 400, 640, 800, 1024, 1280, 1440, 1920, 2560, 2880, 3840,
+        ],
         resolution: [1, 2],
       },
     },
