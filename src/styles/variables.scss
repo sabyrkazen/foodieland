@@ -24,4 +24,12 @@
   --transition-duration: 0.2s;
 
   --layer-mobile-menu: 100;
+
+  @include tablet {
+    --section-padding-y: 60px;
+  }
+
+  @include mobile {
+    --section-padding-y: 40px;
+  }
 }
