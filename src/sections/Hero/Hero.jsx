@@ -8,6 +8,7 @@ import './Hero.scss'
 export const Hero = () => {
   const slides = [
     {
+      id: 'chicken-wings-1',
       title: 'Spicy delicious chicken wings',
       description: 'Lorem ipsum dolor sit amet, consectetuipisicing elit...',
       category: {
@@ -29,6 +30,7 @@ export const Hero = () => {
       imgSrc: sliderBg,
     },
     {
+      id: 'chicken-wings-main',
       title: 'Spicy delicious chicken wings',
       TitleTag: 'h1',
       description: 'Lorem ipsum dolor sit amet, consectetuipisicing elit...',
@@ -51,6 +53,7 @@ export const Hero = () => {
       imgSrc: sliderBg,
     },
     {
+      id: 'chicken-wings-3',
       title: 'Spicy delicious chicken wings',
       description: 'Lorem ipsum dolor sit amet, consectetuipisicing elit...',
       category: {
@@ -86,8 +89,8 @@ export const Hero = () => {
         })}
       >
         <ul className="hero__slider-list swiper-wrapper">
-          {slides.map((slide, index) => (
-            <li key={index} className="hero__slider-item swiper-slide">
+          {slides.map((slide) => (
+            <li key={slide.id} className="hero__slider-item swiper-slide">
               <HeroCard className="hero__card" {...slide} />
             </li>
           ))}
