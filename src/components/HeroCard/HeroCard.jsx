@@ -1,6 +1,4 @@
 import clsx from 'clsx'
-import { Image } from 'minista'
-
 import { Icon } from '@/components/Icon'
 import { AuthorCard } from '@/components/AuthorCard'
 import { Button } from '@/components/Button'
@@ -61,11 +59,13 @@ export const HeroCard = ({
           loading="lazy"
         />
       </div>
-      <Image
+      <img
         className="hero-card__image"
         src={imgSrc}
         width={660}
         height={640}
+        loading="lazy"
+        alt={title}
       />
     </div>
   )

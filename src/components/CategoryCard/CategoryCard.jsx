@@ -1,5 +1,3 @@
-import { Image } from 'minista'
-
 import './CategoryCard.scss'
 
 export const CategoryCard = ({ title, imgSrc, color }) => {
@@ -13,11 +11,13 @@ export const CategoryCard = ({ title, imgSrc, color }) => {
           className="category-card__image-wrapper"
           style={{ '--categoryCardImage': `url('${imgSrc}')` }}
         >
-          <Image
+          <img
             className="category-card__image"
             src={imgSrc}
             width={100}
             height={100}
+            loading="lazy"
+            alt={title}
           />
         </div>
         <h3 className="category-card__title h6">{title}</h3>
