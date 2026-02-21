@@ -5,19 +5,19 @@
 
   &__body {
     --categoryCardColorStart: color-mix(
-        in srgb,
-        var(--categoryCardColor),
-        transparent 100%
+      in srgb,
+      var(--categoryCardColor),
+      transparent 100%
     );
     --categoryCardColorEnd: color-mix(
-        in srgb,
-        var(--categoryCardColor),
-        transparent 90%
+      in srgb,
+      var(--categoryCardColor),
+      transparent 90%
     );
     --categoryCardColorImageShadow: color-mix(
-        in srgb,
-        var(--categoryCardColor),
-        transparent 50%
+      in srgb,
+      var(--categoryCardColor),
+      transparent 50%
     );
 
     display: flex;
@@ -25,11 +25,12 @@
     align-items: center;
     row-gap: 50px;
     padding: 0 40px 30px;
-    border-radius: var(--border-radius);
     background-image: linear-gradient(
-        180deg,
-        var(--categoryCardColorStart) 0%,
-        var(--categoryCardColorEnd) 100%);
+      180deg,
+      var(--categoryCardColorStart) 0%,
+      var(--categoryCardColorEnd) 100%
+    );
+    border-radius: var(--border-radius);
   }
 
   &__image {

@@ -1,13 +1,13 @@
 .button {
   display: inline-flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   column-gap: 15px;
   min-width: 200px;
   height: 60px;
-  color: var(--color-light);
   font-size: 14px;
   font-weight: 600;
+  color: var(--color-light);
   background-color: var(--color-dark);
   border: 2px solid var(--color-dark);
   border-radius: var(--border-radius-s);

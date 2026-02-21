@@ -25,10 +25,10 @@
 
   &__badge {
     position: absolute;
-    left: calc(100% - 50px);
     top: 50px;
-    width: 150px;
+    left: calc(100% - 50px);
     aspect-ratio: 1;
+    width: 150px;
 
     @include tablet {
       inset: auto 50px calc(100% - 50px) auto;
