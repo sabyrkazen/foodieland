@@ -1,16 +1,11 @@
 import clsx from 'clsx'
 
 import { Icon } from '@/components/Icon'
+import { links } from '@/components/Socials/socials.data'
 
 import './Socials.scss'
 
 export const Socials = ({ className }) => {
-  const links = [
-    { label: 'Facebook', icon: 'facebook' },
-    { label: 'Twitter', icon: 'twitter' },
-    { label: 'Instagram', icon: 'instagram' },
-  ]
-
   return (
     <div className={clsx('soc1als', className)}>
       <ul className="soc1als__list">
