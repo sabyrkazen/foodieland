@@ -10,7 +10,6 @@ export default () => {
       description="About section description"
     >
       <p>About section content</p>
-      <Image src="/src/assets/images/cat.jpg" />
     </Section>
   )
 }

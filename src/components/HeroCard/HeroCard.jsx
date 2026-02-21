@@ -21,7 +21,12 @@ export const HeroCard = ({
     <div className={clsx('hero-card', className)}>
       <div className="hero-card__body">
         <header className="hero-card__category">
-          <Image className="hero-card__category-image" src={category.imgSrc} />
+          <Image
+            className="hero-card__category-image"
+            src={category.imgSrc}
+            width={24}
+            height={24}
+          />
           <span>{category.label}</span>
         </header>
         <TitleTag className="hero-card__title">{title}</TitleTag>
