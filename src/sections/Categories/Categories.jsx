@@ -2,8 +2,6 @@ import { Section } from '@/layouts/Section'
 import { Grid } from '@/components/Grid'
 import { CategoryCard } from '@/components/CategoryCard'
 
-import './Categories.scss'
-
 export const Categories = () => {
   const categories = [
     {

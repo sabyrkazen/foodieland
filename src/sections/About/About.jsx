@@ -2,8 +2,6 @@ import { Image } from 'minista'
 
 import { Section } from '@/layouts/Section'
 
-import './About.scss'
-
 export default () => {
   return (
     <Section
