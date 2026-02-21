@@ -1,7 +1,7 @@
-import { Section } from '@/layouts/Section'
-import { Grid } from '@/components/Grid'
-import { CategoryCard } from '@/components/CategoryCard'
-import { categories } from '@/sections/Categories/categories.data'
+import { Section } from '../../layouts/Section'
+import { Grid } from '../../components/Grid'
+import { CategoryCard } from '../../components/CategoryCard'
+import { categories } from './categories.data'
 
 export const Categories = () => {
   return (
