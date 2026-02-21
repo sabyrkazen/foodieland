@@ -4,7 +4,7 @@ import { Button } from '@/components/Button'
 
 import './Section.scss'
 
-export default ({
+export const Section = ({
   className,
   title,
   titleId,

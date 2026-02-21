@@ -1,4 +1,4 @@
-import Section from '@/layouts/Section'
+import { Section } from '@/layouts/Section'
 import { Grid } from '@/components/Grid'
 import { CategoryCard } from '@/components/CategoryCard'
 
