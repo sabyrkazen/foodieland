@@ -56,7 +56,9 @@ export const Categories = () => {
     >
       <Grid className="categories__list" columns={6}>
         {categories.map((category) => (
-          <CategoryCard key={category.id} {...category} />
+          <li key={category.id}>
+            <CategoryCard {...category} />
+          </li>
         ))}
       </Grid>
     </Section>
