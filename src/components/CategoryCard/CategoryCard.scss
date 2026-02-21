@@ -18,8 +18,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 50px;
-    padding: 0 40px 30px;
+    row-gap: fluid(50, 30);
+    padding-inline: 40px;
+    padding-bottom: 30px;
     background-image: linear-gradient(
         180deg,
         var(--categoryCardColorStart) 0%,
