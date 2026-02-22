@@ -1,0 +1,73 @@
+import { RecipeBanner } from '../../components/RecipeBanner'
+
+export const recipes = [
+  {
+    id: 1,
+    type: 'recipe',
+    title: '',
+    cookingTime: '',
+    category: '',
+    imgSrc: '',
+  },
+  {
+    id: 2,
+    type: 'recipe',
+    title: '',
+    cookingTime: '',
+    category: '',
+    imgSrc: '',
+  },
+  {
+    id: 3,
+    type: 'recipe',
+    title: '',
+    cookingTime: '',
+    category: '',
+    imgSrc: '',
+  },
+  {
+    id: 4,
+    type: 'recipe',
+    title: '',
+    cookingTime: '',
+    category: '',
+    imgSrc: '',
+  },
+  {
+    id: 5,
+    type: 'recipe',
+    title: '',
+    cookingTime: '',
+    category: '',
+    imgSrc: '',
+  },
+  {
+    id: 6,
+    type: 'banner',
+    bannerComponent: <RecipeBanner />,
+  },
+  {
+    id: 7,
+    type: 'recipe',
+    title: '',
+    cookingTime: '',
+    category: '',
+    imgSrc: '',
+  },
+  {
+    id: 8,
+    type: 'recipe',
+    title: '',
+    cookingTime: '',
+    category: '',
+    imgSrc: '',
+  },
+  {
+    id: 9,
+    type: 'recipe',
+    title: '',
+    cookingTime: '',
+    category: '',
+    imgSrc: '',
+  },
+]
