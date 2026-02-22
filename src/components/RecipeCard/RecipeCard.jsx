@@ -1,5 +1,6 @@
-import './RecipeCard.scss'
 import { Icon } from '../Icon'
+
+import './RecipeCard.scss'
 
 export const RecipeCard = ({ title, cookingTime, category, imgSrc }) => {
   return (
@@ -15,14 +16,14 @@ export const RecipeCard = ({ title, cookingTime, category, imgSrc }) => {
         />
         <h3 className="recipe-card__title h4">{title}</h3>
         <div className="recipe-card__info">
-          <span className="recipe-card__time">
+          <div className="recipe-card__time">
             <Icon name="clock" hasFill />
-            {cookingTime}
-          </span>
-          <span className="recipe-card__category">
+            <span>{cookingTime}</span>
+          </div>
+          <div className="recipe-card__category">
             <Icon name="cutlery" hasFill />
-            {category}
-          </span>
+            <span>{category}</span>
+          </div>
         </div>
       </a>
     </article>
