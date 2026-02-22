@@ -13,10 +13,7 @@ const defaultCookingTime = {
 }
 
 const createInfo = (category) => [
-  {
-    icon: 'clock',
-    label: '30 Minutes',
-  },
+  defaultCookingTime,
   {
     icon: 'cutlery',
     label: category,
