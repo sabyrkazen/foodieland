@@ -1,0 +1,26 @@
+.recipe-card {
+  &__link {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 16px;
+    background-image: var(--gradient);
+    border-radius: var(--border-radius);
+    min-height: 434px;
+  }
+
+  &__image {
+    border-radius: var(--border-radius-s);
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 24px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+}
