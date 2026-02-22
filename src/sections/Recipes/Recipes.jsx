@@ -15,10 +15,10 @@ export const Recipes = () => {
     >
       <Grid columns={3}>
         {recipes.map((recipe) => {
-          const { type, ...rest } = recipe
+          const { id, type, ...rest } = recipe
 
           return (
-            <li key={recipe.id}>
+            <li key={id}>
               {type === 'banner' ? (
                 <RecipeBanner />
               ) : (
