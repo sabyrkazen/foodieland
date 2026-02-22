@@ -12,13 +12,16 @@ const defaultCookingTime = {
   label: '30 Minutes',
 }
 
-const createInfo = (category) => ({
-  cookingTime: defaultCookingTime,
-  category: {
+const createInfo = (category) => [
+  {
+    icon: 'clock',
+    label: '30 Minutes',
+  },
+  {
     icon: 'cutlery',
     label: category,
   },
-})
+]
 
 export const recipes = [
   {

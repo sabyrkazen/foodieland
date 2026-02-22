@@ -15,17 +15,14 @@ export const RecipeCard = ({ title, info, imgSrc }) => {
           loading="lazy"
         />
         <h3 className="recipe-card__title h4">{title}</h3>
-        <div className="recipe-card__info">
-          {Object.entries(info).map(([key, { icon, label }]) => (
-            <div
-              className={`recipe-card__${key === 'cookingTime' ? 'time' : key}`}
-              key={key}
-            >
+        <ul className="recipe-card__list">
+          {info.map(({ icon, label }, index) => (
+            <li className="recipe-card__item" key={index}>
               <Icon name={icon} hasFill />
               <span>{label}</span>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </a>
     </article>
   )
