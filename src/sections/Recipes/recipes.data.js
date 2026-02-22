@@ -7,45 +7,53 @@ import orangeBlueberryPancake from '@/assets/images/recipes/7.jpg'
 import onePotChickenRice from '@/assets/images/recipes/8.jpg'
 import chickenBaconPasta from '@/assets/images/recipes/9.jpg'
 
+const defaultCookingTime = {
+  icon: 'clock',
+  label: '30 Minutes',
+}
+
+const createInfo = (category) => ({
+  cookingTime: defaultCookingTime,
+  category: {
+    icon: 'cutlery',
+    label: category,
+  },
+})
+
 export const recipes = [
   {
     id: 1,
     type: 'recipe',
     title: 'Big and Juicy Wagyu Beef Cheeseburger',
-    cookingTime: '30 Minutes',
-    category: 'Snack',
+    info: createInfo('Snack'),
     imgSrc: wagyuBeefCheeseburger,
   },
   {
     id: 2,
     type: 'recipe',
     title: 'Fresh Lime Roasted Salmon with Ginger Sauce',
-    cookingTime: '30 Minutes',
-    category: 'Fish',
+    info: createInfo('Fish'),
     imgSrc: limeRoastedSalmon,
   },
   {
     id: 3,
     type: 'recipe',
     title: 'Strawberry Oatmeal Pancake with Honey Syrup',
-    cookingTime: '30 Minutes',
-    category: 'Breakfast',
+    info: createInfo('Breakfast'),
     imgSrc: strawberryOatmealPancake,
   },
   {
     id: 4,
     type: 'recipe',
     title: 'Fresh and Healthy Mixed Mayonnaise Salad',
-    cookingTime: '30 Minutes',
-    category: 'Healthy',
+    info: createInfo('Healthy'),
     imgSrc: mixedMayonnaiseSalad,
   },
   {
     id: 5,
     type: 'recipe',
     title: 'Chicken Meatballs with Cream Cheese',
-    cookingTime: '30 Minutes',
-    category: 'Meat',
+    info: createInfo('Meat'),
     imgSrc: chickenMeatballsCreamCheese,
   },
   {
@@ -56,24 +64,21 @@ export const recipes = [
     id: 7,
     type: 'recipe',
     title: 'Fruity Pancake with Orange & Blueberry',
-    cookingTime: '30 Minutes',
-    category: 'Sweet',
+    info: createInfo('Sweet'),
     imgSrc: orangeBlueberryPancake,
   },
   {
     id: 8,
     type: 'recipe',
     title: 'The Best Easy One Pot Chicken and Rice',
-    cookingTime: '30 Minutes',
-    category: 'Snack',
+    info: createInfo('Snack'),
     imgSrc: onePotChickenRice,
   },
   {
     id: 9,
     type: 'recipe',
     title: 'The Creamiest Creamy Chicken and Bacon Pasta',
-    cookingTime: '30 Minutes',
-    category: 'Noodles',
+    info: createInfo('Noodles'),
     imgSrc: chickenBaconPasta,
   },
 ]
