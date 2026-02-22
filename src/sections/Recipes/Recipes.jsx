@@ -4,8 +4,6 @@ import { RecipeCard } from '../../components/RecipeCard'
 import { RecipeBanner } from '../../components/RecipeBanner'
 import { recipes } from './recipes.data'
 
-import './Recipes.scss'
-
 export const Recipes = () => {
   return (
     <Section
