@@ -14,15 +14,19 @@ export const Recipes = () => {
       description="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim"
     >
       <Grid columns={3}>
-        {recipes.map((recipe) => (
-          <li key={recipe.id}>
-            {recipe.type === 'banner' ? (
-              <RecipeBanner />
-            ) : (
-              <RecipeCard {...recipe} />
-            )}
-          </li>
-        ))}
+        {recipes.map((recipe) => {
+          const { type, ...rest } = recipe
+
+          return (
+            <li key={recipe.id}>
+              {type === 'banner' ? (
+                <RecipeBanner />
+              ) : (
+                <RecipeCard {...rest} />
+              )}
+            </li>
+          )
+        })}
       </Grid>
     </Section>
   )
