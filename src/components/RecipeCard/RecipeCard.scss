@@ -3,10 +3,10 @@
     display: flex;
     flex-direction: column;
     row-gap: 24px;
+    min-height: 434px;
     padding: 16px;
     background-image: var(--gradient);
     border-radius: var(--border-radius);
-    min-height: 434px;
   }
 
   &__image {
