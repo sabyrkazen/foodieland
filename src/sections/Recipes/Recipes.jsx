@@ -2,7 +2,7 @@ import { Section } from '../../layouts/Section'
 import { Grid } from '../../components/Grid'
 import { RecipeCard } from '../../components/RecipeCard'
 import { RecipeBanner } from '../../components/RecipeBanner'
-import { recipes } from './recipe.data'
+import { recipes } from './recipes.data'
 
 import './Recipes.scss'
 
