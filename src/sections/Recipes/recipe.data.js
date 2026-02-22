@@ -1,5 +1,3 @@
-import { RecipeBanner } from '../../components/RecipeBanner'
-
 export const recipes = [
   {
     id: 1,
@@ -44,7 +42,6 @@ export const recipes = [
   {
     id: 6,
     type: 'banner',
-    bannerComponent: <RecipeBanner />,
   },
   {
     id: 7,
