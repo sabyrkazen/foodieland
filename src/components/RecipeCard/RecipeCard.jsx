@@ -2,7 +2,7 @@ import { Icon } from '../Icon'
 
 import './RecipeCard.scss'
 
-export const RecipeCard = ({ title, cookingTime, category, imgSrc }) => {
+export const RecipeCard = ({ title, info, imgSrc }) => {
   return (
     <article className="recipe-card">
       <a className="recipe-card__link" href="/">
@@ -16,14 +16,15 @@ export const RecipeCard = ({ title, cookingTime, category, imgSrc }) => {
         />
         <h3 className="recipe-card__title h4">{title}</h3>
         <div className="recipe-card__info">
-          <div className="recipe-card__time">
-            <Icon name="clock" hasFill />
-            <span>{cookingTime}</span>
-          </div>
-          <div className="recipe-card__category">
-            <Icon name="cutlery" hasFill />
-            <span>{category}</span>
-          </div>
+          {Object.entries(info).map(([key, { icon, label }]) => (
+            <div
+              className={`recipe-card__${key === 'cookingTime' ? 'time' : key}`}
+              key={key}
+            >
+              <Icon name={icon} hasFill />
+              <span>{label}</span>
+            </div>
+          ))}
         </div>
       </a>
     </article>
