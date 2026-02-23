@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+
 import './AuthorCard.scss'
 
 export const AuthorCard = ({ className, imgSrc, name, date }) => {
