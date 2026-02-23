@@ -1,4 +1,4 @@
-import dish from '@/assets/images/banner/dish.png'
+import dish from '@assets/images/banner/dish.png'
 
 import './RecipeBanner.scss'
 
