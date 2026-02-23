@@ -1,8 +1,8 @@
 import clsx from 'clsx'
 
-import { Icon } from '@/components/Icon'
-import { AuthorCard } from '@/components/AuthorCard'
-import { Button } from '@/components/Button'
+import { Icon } from '../Icon'
+import { AuthorCard } from '../AuthorCard'
+import { Button } from '../Button'
 import { Tags } from '../Tags'
 
 import './HeroCard.scss'
