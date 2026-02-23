@@ -9,6 +9,7 @@ export const Categories = () => {
       title="Categories"
       titleId="categories"
       linkLabel="View All Categories"
+      headerClassName="section__header--with-link"
     >
       <Grid className="categories__list" columns={6}>
         {categories.map((category) => (

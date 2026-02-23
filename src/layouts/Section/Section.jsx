@@ -11,18 +11,20 @@ export const Section = ({
   description,
   linkLabel,
   children,
+  headerClassName,
+  descriptionClassName,
 }) => {
   return (
     <section
       className={clsx('section', 'container', className)}
       aria-labelledby={titleId}
     >
-      <header className="section__header">
+      <header className={clsx('section__header', headerClassName)}>
         <h2 className="section__title" id={titleId}>
           {title}
         </h2>
         {description && (
-          <div className="section__description">
+          <div className={clsx('section__description', descriptionClassName)}>
             <p>{description}</p>
           </div>
         )}

@@ -5,12 +5,18 @@
 
   &__header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    column-gap: 16px;
+    row-gap: 24px;
 
-    @include mobile {
-      display: contents;
+    &--with-link {
+      flex-direction: row;
+      justify-content: space-between;
+      column-gap: 16px;
+
+      @include mobile {
+        display: contents;
+      }
     }
   }
 
