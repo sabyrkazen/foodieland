@@ -7,6 +7,9 @@ import orangeBlueberryPancake from '@/assets/images/recipes/7.jpg'
 import onePotChickenRice from '@/assets/images/recipes/8.jpg'
 import chickenBaconPasta from '@/assets/images/recipes/9.jpg'
 
+import heartLiked from '@/assets/icons/heart/heart-liked.svg'
+import heartUnliked from '@/assets/icons/heart/heart-unliked.svg'
+
 const defaultCookingTime = {
   icon: 'clock',
   label: '30 Minutes',
@@ -27,6 +30,10 @@ export const recipes = [
     title: 'Big and Juicy Wagyu Beef Cheeseburger',
     info: createInfo('Snack'),
     imgSrc: wagyuBeefCheeseburger,
+    heartIcon: {
+      label: 'Liked',
+      imgSrc: heartLiked,
+    },
   },
   {
     id: 2,
@@ -34,6 +41,10 @@ export const recipes = [
     title: 'Fresh Lime Roasted Salmon with Ginger Sauce',
     info: createInfo('Fish'),
     imgSrc: limeRoastedSalmon,
+    heartIcon: {
+      label: 'Unliked',
+      imgSrc: heartUnliked,
+    },
   },
   {
     id: 3,
@@ -41,6 +52,10 @@ export const recipes = [
     title: 'Strawberry Oatmeal Pancake with Honey Syrup',
     info: createInfo('Breakfast'),
     imgSrc: strawberryOatmealPancake,
+    heartIcon: {
+      label: 'Unliked',
+      imgSrc: heartUnliked,
+    },
   },
   {
     id: 4,
@@ -48,6 +63,10 @@ export const recipes = [
     title: 'Fresh and Healthy Mixed Mayonnaise Salad',
     info: createInfo('Healthy'),
     imgSrc: mixedMayonnaiseSalad,
+    heartIcon: {
+      label: 'Liked',
+      imgSrc: heartLiked,
+    },
   },
   {
     id: 5,
@@ -55,6 +74,10 @@ export const recipes = [
     title: 'Chicken Meatballs with Cream Cheese',
     info: createInfo('Meat'),
     imgSrc: chickenMeatballsCreamCheese,
+    heartIcon: {
+      label: 'Unliked',
+      imgSrc: heartUnliked,
+    },
   },
   {
     id: 6,
@@ -66,6 +89,10 @@ export const recipes = [
     title: 'Fruity Pancake with Orange & Blueberry',
     info: createInfo('Sweet'),
     imgSrc: orangeBlueberryPancake,
+    heartIcon: {
+      label: 'Liked',
+      imgSrc: heartLiked,
+    },
   },
   {
     id: 8,
@@ -73,6 +100,10 @@ export const recipes = [
     title: 'The Best Easy One Pot Chicken and Rice',
     info: createInfo('Snack'),
     imgSrc: onePotChickenRice,
+    heartIcon: {
+      label: 'Unliked',
+      imgSrc: heartUnliked,
+    },
   },
   {
     id: 9,
@@ -80,5 +111,9 @@ export const recipes = [
     title: 'The Creamiest Creamy Chicken and Bacon Pasta',
     info: createInfo('Noodles'),
     imgSrc: chickenBaconPasta,
+    heartIcon: {
+      label: 'Unliked',
+      imgSrc: heartUnliked,
+    },
   },
 ]
