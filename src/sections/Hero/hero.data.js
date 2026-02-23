@@ -6,7 +6,8 @@ export const slides = [
   {
     id: 'chicken-wings-1',
     title: 'Spicy delicious chicken wings',
-    description: 'Lorem ipsum dolor sit amet, consectetuipisicing elit...',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim ',
     category: {
       imgSrc: scrollIcon,
       label: 'Hot Recipes',
@@ -29,7 +30,8 @@ export const slides = [
     id: 'chicken-wings-main',
     title: 'Spicy delicious chicken wings',
     TitleTag: 'h1',
-    description: 'Lorem ipsum dolor sit amet, consectetuipisicing elit...',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim ',
     category: {
       imgSrc: scrollIcon,
       label: 'Hot Recipes',
@@ -51,7 +53,8 @@ export const slides = [
   {
     id: 'chicken-wings-3',
     title: 'Spicy delicious chicken wings',
-    description: 'Lorem ipsum dolor sit amet, consectetuipisicing elit...',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim ',
     category: {
       imgSrc: scrollIcon,
       label: 'Hot Recipes',
