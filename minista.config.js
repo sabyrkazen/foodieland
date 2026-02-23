@@ -75,6 +75,10 @@ export default defineConfig({
         find: '@components/',
         replacement: path.resolve('src/components') + '/',
       },
+      {
+        find: '@utils/',
+        replacement: path.resolve('src/utils') + '/',
+      },
     ],
   },
 
