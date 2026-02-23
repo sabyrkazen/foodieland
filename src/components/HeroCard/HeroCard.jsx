@@ -56,7 +56,7 @@ export const HeroCard = ({
         </footer>
         <img
           className="hero-card__badge"
-          src="/images/badge.svg"
+          src="/src/assets/images/badge.svg"
           alt="Handpicked Recipes"
           title="Handpicked Recipes"
           width={150}
