@@ -1,14 +1,14 @@
-import wagyuBeefCheeseburger from '@/assets/images/recipes/1.jpg'
-import limeRoastedSalmon from '@/assets/images/recipes/2.jpg'
-import strawberryOatmealPancake from '@/assets/images/recipes/3.jpg'
-import mixedMayonnaiseSalad from '@/assets/images/recipes/4.jpg'
-import chickenMeatballsCreamCheese from '@/assets/images/recipes/5.jpg'
-import orangeBlueberryPancake from '@/assets/images/recipes/7.jpg'
-import onePotChickenRice from '@/assets/images/recipes/8.jpg'
-import chickenBaconPasta from '@/assets/images/recipes/9.jpg'
+import wagyuBeefCheeseburger from '@assets/images/recipes/1.jpg'
+import limeRoastedSalmon from '@assets/images/recipes/2.jpg'
+import strawberryOatmealPancake from '@assets/images/recipes/3.jpg'
+import mixedMayonnaiseSalad from '@assets/images/recipes/4.jpg'
+import chickenMeatballsCreamCheese from '@assets/images/recipes/5.jpg'
+import orangeBlueberryPancake from '@assets/images/recipes/7.jpg'
+import onePotChickenRice from '@assets/images/recipes/8.jpg'
+import chickenBaconPasta from '@assets/images/recipes/9.jpg'
 
-import heartLiked from '@/assets/icons/heart/heart-liked.svg'
-import heartUnliked from '@/assets/icons/heart/heart-unliked.svg'
+import heartLiked from '@assets/icons/heart/heart-liked.svg'
+import heartUnliked from '@assets/icons/heart/heart-unliked.svg'
 
 const defaultCookingTime = {
   icon: 'clock',

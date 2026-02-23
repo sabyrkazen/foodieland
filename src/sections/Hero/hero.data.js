@@ -1,6 +1,6 @@
-import sliderBg from '@/assets/images/slider-bg.jpg'
-import scrollIcon from '@/assets/images/scroll.png'
-import authorImg from '@/assets/images/author.jpg'
+import sliderBg from '@assets/images/slider-bg.jpg'
+import scrollIcon from '@assets/images/scroll.png'
+import authorImg from '@assets/images/author.jpg'
 
 export const slides = [
   {

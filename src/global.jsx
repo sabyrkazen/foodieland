@@ -4,10 +4,10 @@ import { Header } from '@layouts/Header'
 import { Content } from '@layouts/Content'
 import { Footer } from '@layouts/Footer'
 
-import appleTouchIcon from '@/assets/favicons/apple-touch-icon.png'
-import favicon32 from '@/assets/favicons/favicon-32x32.png'
-import favicon16 from '@/assets/favicons/favicon-16x16.png'
-import manifest from '@/assets/favicons/site.webmanifest'
+import appleTouchIcon from '@assets/favicons/apple-touch-icon.png'
+import favicon32 from '@assets/favicons/favicon-32x32.png'
+import favicon16 from '@assets/favicons/favicon-16x16.png'
+import manifest from '@assets/favicons/site.webmanifest'
 
 import '@/styles'
 
