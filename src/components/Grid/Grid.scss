@@ -11,6 +11,16 @@
     }
   }
 
+  &--3 {
+    @include laptop {
+      --gridColumns: 2;
+    }
+
+    @include mobile {
+      --gridColumns: 1;
+    }
+  }
+
   &--6 {
     @include laptop-s {
       --gridColumns: 3;
