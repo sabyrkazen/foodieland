@@ -1,8 +1,10 @@
 import Swiper from 'swiper'
 import { EffectCoverflow } from 'swiper/modules'
+
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
-import getAttrNameFromSelector from '@/utils/getAttrNameFromSelector'
+
+import getAttrNameFromSelector from '@utils/getAttrNameFromSelector'
 
 const rootSelector = '[data-js-slider]'
 
@@ -23,7 +25,7 @@ class Slider {
   }
 }
 
-class SlierCollection {
+export class SliderCollection {
   constructor() {
     this.init()
   }
@@ -34,5 +36,3 @@ class SlierCollection {
     })
   }
 }
-
-export default SlierCollection

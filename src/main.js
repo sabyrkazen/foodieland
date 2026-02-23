@@ -1,5 +1,4 @@
-import OverlayMenu from '@/modules/MobileMenu'
-import SliderCollection from '@/modules/SliderCollection'
+import { MobileMenu, SliderCollection } from '@/modules'
 
-new OverlayMenu()
+new MobileMenu()
 new SliderCollection()
