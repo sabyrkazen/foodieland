@@ -72,12 +72,12 @@ export default defineConfig({
         replacement: path.resolve('src') + '/',
       },
       {
-        find: '@components/',
-        replacement: path.resolve('src/components') + '/',
+        find: '@components',
+        replacement: path.resolve('src/components'),
       },
       {
-        find: '@utils/',
-        replacement: path.resolve('src/utils') + '/',
+        find: '@utils',
+        replacement: path.resolve('src/utils'),
       },
     ],
   },
