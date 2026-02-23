@@ -5,8 +5,12 @@
   }
 
   &__item {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     column-gap: 10px;
+  }
+
+  &__label {
+    color: var(--color-gray-600);
   }
 }

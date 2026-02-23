@@ -20,31 +20,32 @@ export const HeroCard = ({
   return (
     <div className={clsx('hero-card', className)}>
       <div className="hero-card__body">
-        <header className="hero-card__category">
-          <img
-            className="hero-card__category-image"
-            src={category.imgSrc}
-            alt={category.label}
-            title={category.label}
-            width={24}
-            height={24}
-            loading="lazy"
-          />
-          <span>{category.label}</span>
-        </header>
-        <TitleTag className="hero-card__title">{title}</TitleTag>
-        <div className="hero-card__description">
-          <p>{description}</p>
-        </div>
-        <div className="hero-card__tags">
-          <Tags
-            data={tags}
-            classes={{
-              list: 'hero-card__tags-list',
-              item: 'hero-card__tags-item',
-              label: 'hero-card__tags-label',
-            }}
-          />
+        <div className="hero-card__body-inner">
+          <header className="hero-card__category">
+            <img
+              className="hero-card__category-image"
+              src={category.imgSrc}
+              alt={category.label}
+              title={category.label}
+              width={24}
+              height={24}
+              loading="lazy"
+            />
+            <span>{category.label}</span>
+          </header>
+          <TitleTag className="hero-card__title">{title}</TitleTag>
+          <div className="hero-card__description">
+            <p>{description}</p>
+          </div>
+          <div className="hero-card__tags">
+            <Tags
+              data={tags}
+              classes={{
+                list: 'hero-card__tags-list',
+                item: 'hero-card__tags-item',
+              }}
+            />
+          </div>
         </div>
         <footer className="hero-card__footer">
           <AuthorCard className="hero-card__author" {...author} />

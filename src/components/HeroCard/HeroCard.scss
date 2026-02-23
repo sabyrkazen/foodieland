@@ -9,6 +9,9 @@
 
   &__body {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: fluid(50, 20);
     background-color: var(--color-secondary);
   }
@@ -79,22 +82,14 @@
     }
 
     &-list {
-      display: flex;
       flex-wrap: wrap;
       column-gap: 16px;
     }
 
     &-item {
-      display: inline-flex;
-      align-items: center;
-      column-gap: 10px;
       padding: 8px 16px;
       background-color: var(--color-gray-50);
       border-radius: var(--border-radius);
-    }
-
-    &-label {
-      color: var(--color-gray-600);
     }
   }
 
@@ -103,7 +98,6 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 16px;
-    margin-top: auto;
 
     @include laptop-s {
       flex-direction: column;
