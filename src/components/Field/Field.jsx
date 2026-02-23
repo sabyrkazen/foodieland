@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 
-import getIdFromTitle from '@/utils/getIdFromTitle'
+import getIdFromTitle from '@utils/getIdFromTitle'
 
 import './Field.scss'
 
