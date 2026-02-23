@@ -1,7 +1,8 @@
 import clsx from 'clsx'
 
 import { Icon } from '@/components/Icon'
-import { links } from '@/components/Socials/socials.data'
+
+import { links } from './socials.data'
 
 import './Socials.scss'
 
