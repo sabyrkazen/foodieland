@@ -1,4 +1,5 @@
 import { HeroCard } from '@components/HeroCard'
+
 import { slides } from './hero.data'
 
 import './Hero.scss'
