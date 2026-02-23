@@ -1,8 +1,8 @@
 import clsx from 'clsx'
 
-import { Logo } from '../../components/Logo'
-import { Socials } from '../../components/Socials'
-import { BurgerButton } from '../../components/BurgerButton'
+import { Logo } from '@components/Logo'
+import { Socials } from '@components/Socials'
+import { BurgerButton } from '@components/BurgerButton'
 
 import { menuItems } from './header.data'
 
