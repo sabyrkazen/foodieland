@@ -1,4 +1,4 @@
-import { HeroCard } from '../../components/HeroCard'
+import { HeroCard } from '@components/HeroCard'
 import { slides } from './hero.data'
 
 import './Hero.scss'
