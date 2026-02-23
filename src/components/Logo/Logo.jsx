@@ -15,7 +15,8 @@ export const Logo = ({ className, loading = 'lazy' }) => {
       <img
         className="logo__image"
         src="/images/logo.svg"
-        alt=""
+        alt="Positivus Logo"
+        title="Positivus Logo"
         width={110}
         height={30}
         loading={loading}

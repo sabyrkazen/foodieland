@@ -23,6 +23,7 @@ export const HeroCard = ({
             className="hero-card__category-image"
             src={category.imgSrc}
             alt={category.label}
+            title={category.label}
             width={24}
             height={24}
             loading="lazy"
@@ -54,6 +55,7 @@ export const HeroCard = ({
           className="hero-card__badge"
           src="/images/badge.svg"
           alt="Handpicked Recipes"
+          title="Handpicked Recipes"
           width={150}
           height={150}
           loading="lazy"
@@ -66,6 +68,7 @@ export const HeroCard = ({
         height={640}
         loading="lazy"
         alt={title}
+        title={title}
       />
     </div>
   )

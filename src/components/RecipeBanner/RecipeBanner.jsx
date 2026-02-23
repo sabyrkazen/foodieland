@@ -10,6 +10,7 @@ export const RecipeBanner = () => {
         className="recipe-banner__image"
         src={dish}
         alt="Healthy dish"
+        title="Healthy dish"
         width={200}
         height={200}
         loading="lazy"

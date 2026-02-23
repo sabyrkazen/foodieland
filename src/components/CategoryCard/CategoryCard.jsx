@@ -18,6 +18,7 @@ export const CategoryCard = ({ title, imgSrc, color }) => {
             height={100}
             loading="lazy"
             alt={title}
+            title={title}
           />
         </div>
         <h3 className="category-card__title h6">{title}</h3>
