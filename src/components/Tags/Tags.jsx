@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 
-import { Icon } from '../Icon'
+import { Icon } from '@components/Icon'
 
 import './Tags.scss'
 
