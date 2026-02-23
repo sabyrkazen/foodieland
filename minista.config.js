@@ -65,31 +65,50 @@ export default defineConfig({
   },
 
   resolve: {
-    // Настройка алиаса @/ → src/
+    // Настройка алиасов для удобного импорта
     alias: [
       {
         find: '@/',
         replacement: path.resolve('src') + '/',
       },
       {
-        find: '@components',
-        replacement: path.resolve('src/components'),
+        find: '@assets/',
+        replacement: path.resolve('src/assets') + '/',
       },
       {
-        find: '@utils',
-        replacement: path.resolve('src/utils'),
+        find: '@components/',
+        replacement: path.resolve('src/components') + '/',
       },
       {
-        find: '@sections',
-        replacement: path.resolve('src/sections'),
+        find: '@constants/',
+        replacement: path.resolve('src/constants') + '/',
       },
       {
-        find: '@layouts',
-        replacement: path.resolve('src/layouts'),
+        find: '@layouts/',
+        replacement: path.resolve('src/layouts') + '/',
+      },
+      {
+        find: '@modules/',
+        replacement: path.resolve('src/modules') + '/',
+      },
+      {
+        find: '@pages/',
+        replacement: path.resolve('src/pages') + '/',
+      },
+      {
+        find: '@sections/',
+        replacement: path.resolve('src/sections') + '/',
+      },
+      {
+        find: '@styles/',
+        replacement: path.resolve('src/styles') + '/',
+      },
+      {
+        find: '@utils/',
+        replacement: path.resolve('src/utils') + '/',
       },
     ],
   },
-
   css: {
     modules: {
       // Поведение CSS-модулей (используется редко, но пусть будет)
