@@ -11,6 +11,16 @@
 
   &__image {
     border-radius: var(--border-radius-s);
+
+    &-wrapper {
+      position: relative;
+    }
+  }
+
+  &__heart {
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 
   &__list {
