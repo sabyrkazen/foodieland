@@ -1,4 +1,4 @@
-import { Tags } from '../Tags'
+import { Tags } from '@components/Tags'
 
 import './RecipeCard.scss'
 
