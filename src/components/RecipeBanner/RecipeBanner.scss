@@ -12,9 +12,9 @@
     z-index: -1;
     top: 0;
     left: 0;
-    width: 400px;
-    height: 434px;
-    background: url('/src/assets/images/banner/banner-bg.jpg') center/contain
+    width: 100%;
+    min-height: 434px;
+    background: url('/src/assets/images/banner/banner-bg.jpg') center/cover
       no-repeat;
   }
 
