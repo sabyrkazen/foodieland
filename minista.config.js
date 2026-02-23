@@ -79,6 +79,14 @@ export default defineConfig({
         find: '@utils',
         replacement: path.resolve('src/utils'),
       },
+      {
+        find: '@sections',
+        replacement: path.resolve('src/sections'),
+      },
+      {
+        find: '@layouts',
+        replacement: path.resolve('src/layouts'),
+      },
     ],
   },
 
