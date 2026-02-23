@@ -1,14 +1,16 @@
+import clsx from 'clsx'
+
 import { Icon } from '../Icon'
 
 import './Tags.scss'
 
-export const Tags = ({ data, listContainer, itemContainer }) => {
+export const Tags = ({ data, classes = {} }) => {
   return (
-    <ul className="tags__list">
+    <ul className={clsx('tags', classes.list)}>
       {data.map(({ icon, label }, index) => (
-        <li className="tags__item" key={index}>
+        <li className={clsx('tags__item', classes.item)} key={index}>
           <Icon name={icon} hasFill />
-          <span>{label}</span>
+          <span className={clsx('tags__label', classes.label)}>{label}</span>
         </li>
       ))}
     </ul>

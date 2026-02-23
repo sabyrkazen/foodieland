@@ -1,7 +1,9 @@
 import clsx from 'clsx'
+
 import { Icon } from '@/components/Icon'
 import { AuthorCard } from '@/components/AuthorCard'
 import { Button } from '@/components/Button'
+import { Tags } from '../Tags'
 
 import './HeroCard.scss'
 
@@ -35,14 +37,14 @@ export const HeroCard = ({
           <p>{description}</p>
         </div>
         <div className="hero-card__tags">
-          <ul className="hero-card__tags-list">
-            {tags.map(({ icon, label }) => (
-              <li className="hero-card__tags-item" key={label}>
-                <Icon name={icon} hasFill />
-                <span className="hero-card__tags-label">{label}</span>
-              </li>
-            ))}
-          </ul>
+          <Tags
+            data={tags}
+            classes={{
+              list: 'hero-card__tags-list',
+              item: 'hero-card__tags-item',
+              label: 'hero-card__tags-label',
+            }}
+          />
         </div>
         <footer className="hero-card__footer">
           <AuthorCard className="hero-card__author" {...author} />
