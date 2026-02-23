@@ -1,9 +1,9 @@
-import breakfast from '@/assets/images/categories/breakfast.png'
-import vegan from '@/assets/images/categories/vegan.png'
-import meat from '@/assets/images/categories/meat.png'
-import dessert from '@/assets/images/categories/dessert.png'
-import lunch from '@/assets/images/categories/lunch.png'
-import chocolate from '@/assets/images/categories/chocolate.png'
+import breakfast from '@assets/images/categories/breakfast.png'
+import vegan from '@assets/images/categories/vegan.png'
+import meat from '@assets/images/categories/meat.png'
+import dessert from '@assets/images/categories/dessert.png'
+import lunch from '@assets/images/categories/lunch.png'
+import chocolate from '@assets/images/categories/chocolate.png'
 
 export const categories = [
   {
