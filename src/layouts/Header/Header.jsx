@@ -1,9 +1,10 @@
 import clsx from 'clsx'
 
-import { Logo } from '@/components/Logo'
-import { Socials } from '@/components/Socials'
-import { BurgerButton } from '@/components/BurgerButton'
-import { menuItems } from '@/layouts/Header/header.data'
+import { Logo } from '../../components/Logo'
+import { Socials } from '../../components/Socials'
+import { BurgerButton } from '../../components/BurgerButton'
+
+import { menuItems } from './header.data'
 
 import './Header.scss'
 
