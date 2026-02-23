@@ -1,4 +1,4 @@
-import { Icon } from '../Icon'
+import { Tags } from '../Tags'
 
 import './RecipeCard.scss'
 
@@ -27,14 +27,7 @@ export const RecipeCard = ({ title, info, imgSrc, heartIcon }) => {
           />
         </div>
         <h3 className="recipe-card__title h4">{title}</h3>
-        <ul className="recipe-card__list">
-          {info.map(({ icon, label }, index) => (
-            <li className="recipe-card__item" key={index}>
-              <Icon name={icon} hasFill />
-              <span>{label}</span>
-            </li>
-          ))}
-        </ul>
+        <Tags data={info} />
       </a>
     </article>
   )
