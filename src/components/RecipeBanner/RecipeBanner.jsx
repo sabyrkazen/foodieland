@@ -1,5 +1,7 @@
 import dish from '@/assets/images/banner/dish.png'
 
+import './RecipeBanner.scss'
+
 export const RecipeBanner = () => {
   return (
     <article className="recipe-banner">
