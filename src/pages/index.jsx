@@ -1,6 +1,6 @@
-import { Hero } from '@/sections/Hero'
-import { Categories } from '@/sections/Categories'
-import { Recipes } from '@/sections/Recipes'
+import { Hero } from '@sections/Hero'
+import { Categories } from '@sections/Categories'
+import { Recipes } from '@sections/Recipes'
 
 export const metadata = {
   title: 'Home',

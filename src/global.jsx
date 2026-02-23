@@ -1,8 +1,8 @@
 import { Head } from 'minista'
 
-import { Header } from '@/layouts/Header'
-import { Content } from '@/layouts/Content'
-import { Footer } from '@/layouts/Footer'
+import { Header } from '@layouts/Header'
+import { Content } from '@layouts/Content'
+import { Footer } from '@layouts/Footer'
 
 import appleTouchIcon from '@/assets/favicons/apple-touch-icon.png'
 import favicon32 from '@/assets/favicons/favicon-32x32.png'
