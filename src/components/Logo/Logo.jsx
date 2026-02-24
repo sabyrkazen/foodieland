@@ -1,4 +1,3 @@
-import { Image } from 'minista'
 import clsx from 'clsx'
 
 import './Logo.scss'
@@ -13,7 +12,7 @@ export const Logo = ({ className, loading = 'lazy' }) => {
       title={title}
       aria-label={title}
     >
-      <Image
+      <img
         className="logo__image"
         src="/src/assets/images/logo.svg"
         alt="Foodieland Logo"
