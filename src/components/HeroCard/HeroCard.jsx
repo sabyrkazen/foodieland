@@ -26,6 +26,8 @@ export const HeroCard = ({
             <Image
               className="hero-card__category-image"
               src={category.imgSrc}
+              width={100}
+              height={100}
             />
             <span>{category.label}</span>
           </header>
