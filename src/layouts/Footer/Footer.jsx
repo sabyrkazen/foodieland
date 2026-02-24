@@ -1,5 +1,6 @@
-import './Footer.scss'
 import { Socials } from '@components/Socials'
+
+import './Footer.scss'
 
 export const Footer = () => {
   return (
