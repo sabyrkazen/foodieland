@@ -24,6 +24,8 @@ export const Banner = () => {
         <Image
           className="banner__image"
           src="/src/assets/images/banner/banner-bg.png"
+          width={710}
+          height={597}
         />
       </div>
     </div>
