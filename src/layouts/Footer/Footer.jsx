@@ -1,4 +1,4 @@
-import { Icon } from '@components/Icon'
+import { Logo } from '@components/Logo'
 import { Socials } from '@components/Socials'
 
 import { menuItems } from './footer.data'
@@ -11,7 +11,7 @@ export const Footer = () => {
       <div className="footer__inner container">
         <header className="footer__header">
           <div className="footer__body">
-            <Icon className="footer__logo" />
+            <Logo className="footer__logo" />
             <div className="footer__subtitle">
               <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, </p>
             </div>
@@ -29,7 +29,7 @@ export const Footer = () => {
           </nav>
         </header>
         <div className="footer__extra">
-          <div className="footer__copuright">
+          <div className="footer__copyright">
             <p>© 2020 Flowbase. Powered by Webflow</p>
           </div>
           <Socials className="footer__socials" />

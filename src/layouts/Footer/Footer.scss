@@ -1,0 +1,44 @@
+.footer {
+  padding-block: 80px 48px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      column-gap: 60px;
+    }
+  }
+
+  &__extra {
+    position: relative;
+    display: flex;
+  }
+
+  &__copyright {
+    position: absolute;
+    left: 50%;
+    margin-inline: auto;
+    translate: -50%;
+  }
+
+  &__socials {
+    margin-left: auto;
+  }
+}
