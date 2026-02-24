@@ -30,7 +30,7 @@ export const Header = ({ url }) => {
             ))}
           </ul>
         </nav>
-        <Socials className="header__soc1als" />
+        <Socials className="header__socials" />
         <BurgerButton
           className="header__burger-button visible-mobile"
           extraAttrs={{ 'data-js-mobile-menu-burger-button': '' }}
