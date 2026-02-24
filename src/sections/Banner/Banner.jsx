@@ -1,5 +1,3 @@
-import { Image } from 'minista'
-
 import { Button } from '@components/Button'
 
 import './Banner.scss'
@@ -21,9 +19,10 @@ export const Banner = () => {
           </div>
           <Button href="/">Learn More</Button>
         </div>
-        <Image
+        <img
           className="banner__image"
           src="/src/assets/images/banner/banner-bg.png"
+          alt=""
           width={710}
           height={597}
         />
