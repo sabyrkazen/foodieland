@@ -1,4 +1,3 @@
-import { Image } from 'minista'
 import clsx from 'clsx'
 
 import './AuthorCard.scss'
@@ -6,9 +5,10 @@ import './AuthorCard.scss'
 export const AuthorCard = ({ className, imgSrc, name, date }) => {
   return (
     <div className={clsx('author-card', className)}>
-      <Image
+      <img
         className="author-card__image"
         src={imgSrc}
+        alt=""
         width={50}
         height={50}
       />
