@@ -1,5 +1,5 @@
-import clsx from 'clsx'
 import { Icon as MinistaIcon } from 'minista'
+import clsx from 'clsx'
 
 import './Icon.scss'
 
