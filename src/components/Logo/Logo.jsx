@@ -17,6 +17,9 @@ export const Logo = ({ className, loading = 'lazy' }) => {
         className="logo__image"
         src="/src/assets/images/logo.svg"
         alt="Foodieland Logo"
+        width={110}
+        height={30}
+        loading={loading}
       />
     </a>
   )
