@@ -26,8 +26,8 @@ export const HeroCard = ({
             <Image
               className="hero-card__category-image"
               src={category.imgSrc}
-              width={100}
-              height={100}
+              width={24}
+              height={24}
             />
             <span>{category.label}</span>
           </header>
@@ -55,9 +55,16 @@ export const HeroCard = ({
         <Image
           className="hero-card__badge"
           src="/src/assets/images/hero-card/badge.svg"
+          width={150}
+          height={150}
         />
       </div>
-      <Image className="hero-card__image" src={imgSrc} />
+      <Image
+        className="hero-card__image"
+        src={imgSrc}
+        width={660}
+        height={640}
+      />
     </div>
   )
 }
