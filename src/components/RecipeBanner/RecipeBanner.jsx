@@ -10,8 +10,8 @@ export const RecipeBanner = () => {
         className="recipe-banner__image"
         src={dish}
         alt=""
-        width={400}
-        height={434}
+        width={200}
+        height={200}
       />
       <a className="recipe-banner__link" href="/">
         www.foodieland.com
