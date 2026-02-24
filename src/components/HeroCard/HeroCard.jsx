@@ -1,3 +1,4 @@
+import { Image } from 'minista'
 import clsx from 'clsx'
 
 import { Icon } from '@components/Icon'
@@ -22,13 +23,9 @@ export const HeroCard = ({
       <div className="hero-card__body">
         <div className="hero-card__body-inner">
           <header className="hero-card__category">
-            <img
+            <Image
               className="hero-card__category-image"
               src={category.imgSrc}
-              alt=""
-              width={24}
-              height={24}
-              loading="lazy"
             />
             <span>{category.label}</span>
           </header>
