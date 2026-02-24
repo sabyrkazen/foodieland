@@ -30,7 +30,9 @@ export const Footer = () => {
         </header>
         <div className="footer__extra">
           <div className="footer__copyright">
-            <p>© 2020 Flowbase. Powered by Webflow</p>
+            <p>
+              © 2020 Flowbase. Powered by <span>Webflow</span>
+            </p>
           </div>
           <Socials className="footer__socials" />
         </div>

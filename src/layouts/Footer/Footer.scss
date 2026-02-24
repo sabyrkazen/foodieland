@@ -36,6 +36,10 @@
     left: 50%;
     margin-inline: auto;
     translate: -50%;
+
+    & span {
+      color: var(--color-accent);
+    }
   }
 
   &__socials {
