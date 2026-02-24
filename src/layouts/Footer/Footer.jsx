@@ -1,9 +1,9 @@
+import { Icon } from '@components/Icon'
 import { Socials } from '@components/Socials'
 
 import { menuItems } from './footer.data'
 
 import './Footer.scss'
-import { Icon } from '@components/Icon'
 
 export const Footer = () => {
   return (
