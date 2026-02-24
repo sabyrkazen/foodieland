@@ -25,8 +25,7 @@ export const HeroCard = ({
             <img
               className="hero-card__category-image"
               src={category.imgSrc}
-              alt={category.label}
-              title={category.label}
+              alt=""
               width={24}
               height={24}
               loading="lazy"
@@ -70,8 +69,7 @@ export const HeroCard = ({
         width={660}
         height={640}
         loading="lazy"
-        alt={title}
-        title={title}
+        alt=""
       />
     </div>
   )

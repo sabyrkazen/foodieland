@@ -11,8 +11,7 @@ export const AuthorCard = ({ className, imgSrc, name, date }) => {
         width={50}
         height={50}
         loading="lazy"
-        alt={name}
-        title={name}
+        alt=""
       />
       <div className="author-card__body">
         <h3 className="author-card__name">{name}</h3>

@@ -10,8 +10,7 @@ export const RecipeCard = ({ title, info, imgSrc, heartIcon }) => {
           <img
             className="recipe-card__image"
             src={imgSrc}
-            alt={title}
-            title={title}
+            alt=""
             width={368}
             height={250}
             loading="lazy"
@@ -19,8 +18,7 @@ export const RecipeCard = ({ title, info, imgSrc, heartIcon }) => {
           <img
             className="recipe-card__heart"
             src={heartIcon.imgSrc}
-            alt={heartIcon.label}
-            title={heartIcon.label}
+            alt=""
             width={48}
             height={48}
             loading="lazy"
