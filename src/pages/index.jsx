@@ -1,6 +1,7 @@
 import { Hero } from '@sections/Hero'
 import { Categories } from '@sections/Categories'
 import { Recipes } from '@sections/Recipes'
+import { Banner } from '@sections/Banner'
 
 export const metadata = {
   title: 'Home',
@@ -12,6 +13,7 @@ export default () => {
       <Hero />
       <Categories />
       <Recipes />
+      <Banner />
     </>
   )
 }
