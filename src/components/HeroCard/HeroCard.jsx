@@ -50,24 +50,12 @@ export const HeroCard = ({
             <Icon name="play" hasFill />
           </Button>
         </footer>
-        <img
+        <Image
           className="hero-card__badge"
           src="/src/assets/images/hero-card/badge.svg"
-          alt="Handpicked Recipes"
-          title="Handpicked Recipes"
-          width={150}
-          height={150}
-          loading="lazy"
         />
       </div>
-      <img
-        className="hero-card__image"
-        src={imgSrc}
-        width={660}
-        height={640}
-        loading="lazy"
-        alt=""
-      />
+      <Image className="hero-card__image" src={imgSrc} />
     </div>
   )
 }
