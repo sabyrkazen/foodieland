@@ -7,6 +7,8 @@ import orangeBlueberryPancake from '@assets/images/recipes/7.jpg'
 import onePotChickenRice from '@assets/images/recipes/8.jpg'
 import chickenBaconPasta from '@assets/images/recipes/9.jpg'
 
+import bannerDish from '@assets/images/recipe-banner/dish.png'
+
 import heartLiked from '@assets/icons/heart/heart-liked.svg'
 import heartUnliked from '@assets/icons/heart/heart-unliked.svg'
 
@@ -82,6 +84,9 @@ export const recipes = [
   {
     id: 6,
     type: 'banner',
+    title: 'Don’t forget to eat healthy food',
+    imgSrc: bannerDish,
+    linkLabel: 'www.foodieland.com',
   },
   {
     id: 7,

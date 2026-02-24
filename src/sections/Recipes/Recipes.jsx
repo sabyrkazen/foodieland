@@ -21,7 +21,11 @@ export const Recipes = () => {
 
           return (
             <li key={id}>
-              {type === 'banner' ? <RecipeBanner /> : <RecipeCard {...rest} />}
+              {type === 'banner' ? (
+                <RecipeBanner {...rest} />
+              ) : (
+                <RecipeCard {...rest} />
+              )}
             </li>
           )
         })}
