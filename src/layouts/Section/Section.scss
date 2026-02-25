@@ -3,13 +3,25 @@
   row-gap: fluid(80, 40);
   padding-block: var(--section-padding-y);
 
+  &__title {
+    &--daily-recipes {
+      max-width: 520px;
+    }
+  }
+
+  &__description {
+    &--daily-recipes {
+      max-width: 620px;
+    }
+  }
+
   &__header {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 24px;
 
-    &--with-link {
+    &--justify-between {
       flex-direction: row;
       justify-content: space-between;
       column-gap: 16px;

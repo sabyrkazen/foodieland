@@ -10,7 +10,7 @@ export const Categories = () => {
       title="Categories"
       titleId="categories"
       linkLabel="View All Categories"
-      headerClassName="section__header--with-link"
+      headerClassName="section__header--justify-between"
     >
       <Grid className="categories__list" columns={6}>
         {categories.map((category) => (
