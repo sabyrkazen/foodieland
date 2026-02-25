@@ -2,7 +2,6 @@
   display: grid;
   row-gap: fluid(80, 40);
   margin-block: var(--section-padding-y);
-  padding-block: var(--section-padding-y);
 
   &__title {
     @include mobile {
