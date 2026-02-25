@@ -1,3 +1,6 @@
+import 'swiper/css'
+import 'swiper/css/effect-coverflow'
+
 import { HeroCard } from '@components/HeroCard'
 
 import { slides } from './hero.data'
