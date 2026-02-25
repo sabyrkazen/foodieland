@@ -8,7 +8,6 @@ import favicon from '@assets/favicons/favicon.svg'
 import appleTouchIcon from '@assets/favicons/apple-touch-icon.png'
 import manifest from '@assets/favicons/site.webmanifest'
 
-import '@/main'
 import '@/styles'
 
 export default ({ children, title, url }) => {
