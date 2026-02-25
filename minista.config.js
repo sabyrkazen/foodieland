@@ -9,7 +9,8 @@ export default defineConfig({
   root: '',
 
   // Базовый путь (если деплой не в корень сайта, поменяй)
-  base: process.env.NODE_ENV === 'production' ? '/friendly-frontend-starter/' : '/',
+  base:
+    process.env.NODE_ENV === 'production' ? '/friendly-frontend-starter/' : '/',
 
   // Папка с публичными файлами (копируются как есть)
   public: 'public',
