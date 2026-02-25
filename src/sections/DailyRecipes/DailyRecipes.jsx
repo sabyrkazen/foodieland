@@ -12,6 +12,7 @@ export const DailyRecipes = () => {
       title="Try this delicious recipe to make your day"
       titleId="daily-recipes"
       description="Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim"
+      headerClassName="section__header--justify"
     >
       <Grid columns={4}>
         {dailyRecipes.map((recipe) => (
