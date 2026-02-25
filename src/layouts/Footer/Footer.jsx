@@ -13,7 +13,7 @@ export const Footer = () => {
           <div className="footer__body">
             <Logo className="footer__logo" />
             <div className="footer__subtitle">
-              <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, </p>
+              <p>Lorem ipsum dolor sit amet, consectetuipisicing elit,</p>
             </div>
           </div>
           <nav className="footer__menu">
