@@ -1,0 +1,1 @@
+export { DailyRecipeCard } from './DailyRecipeCard'

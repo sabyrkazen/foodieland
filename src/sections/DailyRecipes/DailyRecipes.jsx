@@ -1,6 +1,6 @@
 import { Section } from '@layouts/Section'
 import { Grid } from '@components/Grid'
-import { RecipeCard } from '@components/RecipeCard'
+import { DailyRecipeCard } from '@components/DailyRecipeCard'
 
 import { dailyRecipes } from './daily-recipes.data'
 
@@ -15,7 +15,7 @@ export const DailyRecipes = () => {
     >
       <Grid columns={4}>
         {dailyRecipes.map((recipe) => (
-          <RecipeCard {...recipe} key={recipe.id} />
+          <DailyRecipeCard {...recipe} key={recipe.id} />
         ))}
       </Grid>
     </Section>
