@@ -1,5 +1,3 @@
-import { Image } from 'minista'
-
 import { Grid } from '@components/Grid'
 import { Section } from '@layouts/Section'
 import { Button } from '@components/Button'
@@ -19,9 +17,13 @@ export const InstagramView = () => {
       <div className="instagram-view__body">
         <Grid columns={4}>
           {Array.from({ length: 4 }, (_, index) => (
-            <Image
-              src={`/src/assets/images/instagram-posts/${index + 1}.jpg`}
+            <img
               key={index}
+              src={`/src/assets/images/instagram-posts/${index + 1}.jpg`}
+              alt="Instagram post"
+              width={290}
+              height={446}
+              loading="lazy"
             />
           ))}
         </Grid>
