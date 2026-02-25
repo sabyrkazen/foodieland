@@ -2,8 +2,6 @@ import clsx from 'clsx'
 
 import './Logo.scss'
 
-import logoImg from '@assets/images/logo.svg'
-
 export const Logo = ({ className, loading = 'lazy' }) => {
   const title = 'Home'
 
@@ -16,7 +14,7 @@ export const Logo = ({ className, loading = 'lazy' }) => {
     >
       <img
         className="logo__image"
-        src={logoImg}
+        src="@assets/images/logo.svg"
         alt="Foodieland Logo"
         width={110}
         height={30}

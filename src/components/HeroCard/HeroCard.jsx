@@ -7,8 +7,6 @@ import { Tags } from '@components/Tags'
 
 import './HeroCard.scss'
 
-import badgeIcon from '@assets/images/hero-card/badge.svg'
-
 export const HeroCard = ({
   className,
   category,
@@ -56,7 +54,7 @@ export const HeroCard = ({
         </footer>
         <img
           className="hero-card__badge"
-          src={badgeIcon}
+          src="@assets/images/hero-card/badge.svg"
           alt=""
           width={150}
           height={150}

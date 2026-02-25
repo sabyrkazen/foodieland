@@ -2,8 +2,6 @@ import { Button } from '@components/Button'
 
 import './Banner.scss'
 
-import bannerBg from '@assets/images/banner/banner-bg.png'
-
 export const Banner = () => {
   return (
     <div className="banner">
@@ -25,7 +23,7 @@ export const Banner = () => {
         </div>
         <img
           className="banner__image"
-          src={bannerBg}
+          src="@assets/images/banner/banner-bg.png"
           alt=""
           width={710}
           height={597}
