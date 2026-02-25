@@ -85,6 +85,15 @@ a {
   &[class] {
     text-decoration: none;
   }
+
+  &:not([class]) {
+    text-decoration: none;
+    color: var(--color-accent);
+
+    &:not(:hover) {
+      text-decoration: none;
+    }
+  }
 }
 
 :focus-visible {
