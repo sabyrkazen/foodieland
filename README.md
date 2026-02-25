@@ -1,4 +1,4 @@
-# Foodieland — Modern Recipe Platform
+# Foodieland
 
 Foodieland is a high-performance, professional food and recipe web application designed with a focus on exceptional user
 experience and clean, maintainable architecture. It bridges the gap between sophisticated UI/UX design and solid
