@@ -61,6 +61,10 @@ h6,
   font-weight: 600;
 }
 
+p:not([class]) {
+  color: var(--color-gray-600);
+}
+
 a,
 button,
 label,
