@@ -1,0 +1,31 @@
+.daily-recipe-card {
+  &__link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: var(--border-radius-s);
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &-wrapper {
+      position: relative;
+    }
+  }
+
+  &__heart {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
