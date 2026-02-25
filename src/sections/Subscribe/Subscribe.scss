@@ -24,6 +24,7 @@
 
   &__description {
     max-width: 620px;
+    color: var(--color-gray-600);
 
     &:not(:last-child) {
       margin-bottom: fluid(64, 24);
@@ -38,7 +39,7 @@
 
     @include mobile-above {
       padding: 10px;
-      background-color: var(--color-white);
+      background-color: var(--color-light);
       border: 2px solid transparent;
       border-radius: 24px;
     }
@@ -49,7 +50,7 @@
     }
 
     &:has(.subscribe__input:focus) {
-      border-color: var(--color-black);
+      border-color: var(--color-dark);
     }
   }
 

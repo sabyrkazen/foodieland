@@ -22,7 +22,7 @@ export const Subscribe = () => {
             id="email"
             name="email"
             type="email"
-            placeholder="example@mail.com"
+            placeholder="Your email address..."
           />
           <Button className="subscribe__button" type="submit">
             Subscribe
