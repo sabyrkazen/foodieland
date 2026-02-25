@@ -21,6 +21,16 @@
     }
   }
 
+  &--4 {
+    @include tablet {
+      --gridColumns: 2;
+    }
+
+    @include mobile-s {
+      --gridColumns: 1;
+    }
+  }
+
   &--6 {
     @include laptop-s {
       --gridColumns: 3;
