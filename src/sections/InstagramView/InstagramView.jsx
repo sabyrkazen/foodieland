@@ -3,6 +3,8 @@ import { Section } from '@layouts/Section'
 import { Button } from '@components/Button'
 import { Icon } from '@components/Icon'
 
+import { instagramPosts } from './instagram-view.data'
+
 import './InstagramView.scss'
 
 export const InstagramView = () => {
@@ -16,11 +18,11 @@ export const InstagramView = () => {
     >
       <div className="instagram-view__body">
         <Grid columns={4}>
-          {Array.from({ length: 4 }, (_, index) => (
+          {instagramPosts.map(({ id, imgSrc }) => (
             <img
-              key={index}
-              src={`/src/assets/images/instagram-posts/${index + 1}.jpg`}
-              alt="Instagram post"
+              key={id}
+              src={imgSrc}
+              alt={`Instagram post ${id}`}
               width={290}
               height={446}
               loading="lazy"
