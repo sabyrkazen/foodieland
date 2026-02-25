@@ -15,7 +15,7 @@ export default ({ children, title, url }) => {
     <>
       <Head htmlAttributes={{ lang: 'en' }}>
         <title>Foodieland | {title}</title>
-        <script src="@/main.js" type="module" />
+        <script src="/src/main.js" type="module" />
         <link rel="icon" type="image/svg+xml" href={favicon} />
         <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon} />
         <link rel="manifest" href={manifest} />

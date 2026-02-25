@@ -54,7 +54,7 @@ export const HeroCard = ({
         </footer>
         <img
           className="hero-card__badge"
-          src="@assets/images/hero-card/badge.svg"
+          src="/src/assets/images/hero-card/badge.svg"
           alt=""
           width={150}
           height={150}
