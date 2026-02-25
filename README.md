@@ -1,5 +1,7 @@
 # Foodieland
 
+![Preview image](./src/assets/images/preview.jpg)
+
 Foodieland is a high-performance, professional food and recipe web application designed with a focus on exceptional user
 experience and clean, maintainable architecture. It bridges the gap between sophisticated UI/UX design and solid
 frontend engineering, providing a seamless platform for food enthusiasts to discover and explore culinary inspirations.
