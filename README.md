@@ -1,157 +1,130 @@
-# 🧱 Friendly Frontend Starter
+# Foodieland — Modern Recipe Platform
 
-Стартер для современных фронтенд-проектов на базе [Minista](https://minista.qranoko.jp/) с поддержкой JSX (без React), SCSS, линтинга и автоформатирования.
+Foodieland is a high-performance, professional food and recipe web application designed with a focus on exceptional user
+experience and clean, maintainable architecture. It bridges the gap between sophisticated UI/UX design and solid
+frontend engineering, providing a seamless platform for food enthusiasts to discover and explore culinary inspirations.
 
-## 🚀 Быстрый старт
+## 🛠 Tech Stack
 
-Создайте проект с помощью `npm create`:
+The project is built using a modern, lightweight, and efficient tech stack chosen for performance and developer
+productivity:
 
-```bash
-npm create friendly-frontend@latest
-```
+- **Minista**: A JSX-based static site generator (SSG) that provides the power of JSX (without the overhead of React on
+  the client) for structured, modular development.
+- **Vite**: The underlying build tool ensuring lightning-fast development iterations and optimized production bundles.
+- **SCSS (Sass)**: Utilized for advanced styling, leveraging mixins, variables, and nesting to manage complex UI logic
+  efficiently.
+- **JavaScript (ES6+)**: Used for interactive modules and core application logic.
+- **Swiper.js**: For high-performance, mobile-first touch sliders.
+- **PostCSS**: Integrated with `preset-env` and `pxtorem` for automated browser compatibility and modern unit
+  conversion.
 
-Для TypeScript-версии добавьте флаг `--ts`:
+## 🏗 Architecture & Code Philosophy
 
-```bash
-npm create friendly-frontend@latest -- --ts
-```
+This project is not just about visual appeal; it is built on a foundation of disciplined software engineering
+principles.
 
-## 📦 Что внутри
+### DRY (Don't Repeat Yourself)
 
-Стартер включает:
+Repetitive patterns were abstracted into reusable solutions:
 
-- [Minista](https://minista.qranoko.jp/) с поддержкой JSX без React
-- Сборка через [Vite](https://vite.dev/)
-- Стили:
-  - [SCSS](https://sass-lang.com/)
-  - [PostCSS](https://postcss.org/) + плагины: [`preset-env`](https://www.npmjs.com/package/postcss-preset-env), [`pxtorem`](https://www.npmjs.com/package/postcss-pxtorem)
-  - CSS Normalize: [`@a1rth/css-normalize`](https://www.npmjs.com/package/@a1rth/css-normalize)
-  - Утилитарные миксины и функции в `src/styles/helpers`
-- Полезные зависимости:
-  - [`clsx`](https://www.npmjs.com/package/clsx) — удобное объединение CSS-классов
-  - [`imask`](https://www.npmjs.com/package/imask) — маски для полей ввода
-- Линтинг и форматирование:
-  - [`ESLint`](https://eslint.org/), [`Stylelint`](https://stylelint.io/), [`Prettier`](https://prettier.io/)
-  - Общая конфигурация: [`friendly-frontend-lint-config`](https://www.npmjs.com/package/friendly-frontend-lint-config)
-- Удобства:
-  - Алиасы через `jsconfig.json` (`@/ → src/`)
-  - Готовая структура `src/` с компонентами, секциями, утилитами и layout’ами
+- **Component-Driven Development**: UI elements like `Button`, `Icon`, and `Section` are encapsulated components used
+  throughout the application.
+- **SliderCollection Module**: Instead of initializing Swiper instances multiple times, a centralized `SliderCollection`
+  class scans the DOM for `data-js-slider` attributes and initializes them based on JSON configurations, ensuring a
+  single source of truth for slider logic.
+- **SCSS Mixins**: Common layouts and typography patterns are centralized in `src/styles/helpers`, reducing style
+  duplication.
 
-## 🚀 Скрипты
+### KISS (Keep It Simple, Stupid)
 
-```bash
-npm run start         # Запуск в dev-режиме
-npm run build         # Сборка
-npm run preview       # Локальный просмотр сборки
+- **Declarative Markup**: Using JSX allows for a clear, readable representation of the UI structure.
+- **Functional Components**: Logic is kept local to components where possible, avoiding unnecessary global state and
+  keeping the data flow predictable.
 
-npm run lint:js       # Проверка JS-кода
-npm run lint:js:fix   # Автоисправление JS-кода
-npm run lint:css      # Проверка CSS-кода
-npm run lint:css:fix  # Автоисправление CSS-кода
-npm run format        # Проверка форматирования
-npm run format:fix    # Форматирование
-npm run lint          # Полная проверка кода и форматирования без исправлений
-npm run lint:fix      # Полная проверка с автоисправлением и форматированием
-```
+### YAGNI (You Aren't Gonna Need It)
 
-## ⚙️ Структура проекта
+- **JSX without React**: React's runtime was excluded to keep the bundle size minimal, as the interactivity requirements
+  didn't justify a full SPA framework.
+- **Selective Abstraction**: Abstractions were only introduced when a pattern repeated at least three times, preventing
+  over-engineering and keeping the codebase lean.
+
+## ♿ Semantic & Accessible Markup (a11y)
+
+Accessibility was a core requirement, not an afterthought:
+
+- **Semantic HTML**: Correct use of `<header>`, `<main>`, `<footer>`, `<section>`, and `<article>` tags ensures that the
+  document structure is meaningful to assistive technologies.
+- **ARIA Integration**: Every section is properly labeled using `aria-labelledby`, and interactive elements use
+  appropriate ARIA attributes to communicate state and purpose.
+- **Screen Reader Support**: Visually hidden but descriptive text is provided where icons alone don't convey enough
+  context.
+- **Keyboard Navigation**: Focus management and logical tab order are maintained across all interactive components.
+
+## 🎨 BEM Methodology
+
+Styles are organized using the **BEM (Block, Element, Modifier)** methodology. This choice was driven by:
+
+- **Scalability**: Preventing style leakage and naming collisions as the project grows.
+- **Predictability**: Clearly defining the relationship between HTML structure and CSS classes.
+- **Maintainability**: Making it easy for any developer to locate and modify styles for specific components without side
+  effects.
+
+## 📂 Folder Structure
+
+The project follows a modular, feature-based directory structure for maximum clarity:
 
 ```csharp
-├── public/               # Статичные файлы, не обрабатываемые сборщиком
-├── src/
-│   ├── assets/           # Изображения, иконки, фавиконки и шрифты
-│   │   ├── favicons/     # Фавиконки для сайта
-│   │   ├── fonts/        # Подключаемые шрифты (woff2 и пр.)
-│   │   ├── icons/        # SVG-иконки (для спрайта)
-│   │   └── images/       # Остальные изображения
-│   │
-│   ├── components/       # Мелкие переиспользуемые компоненты (Button, Input и т.п.)
-│   ├── constants/        # Константы, enum’ы, конфиги, словари и пр.
-│   ├── layouts/          # Структурные компоненты страницы (Header, Content, Section, Footer)
-│   ├── modules/          # JavaScript-модули (например: OverlayMenu, InputMaskCollection)
-│   ├── pages/            # Файлы страниц (Minista сам роутит всё отсюда)
-│   ├── sections/         # Переиспользуемые секции страниц (Hero, About, Features и пр.)
-│   ├── styles/           # Общие стили проекта (переменные, миксины, сбросы)
-│   ├── utils/            # Утилитарные функции (например: pxToRem, debounce)
-│   ├── global.jsx        # Общий layout для всех страниц (Minista Feature)
-│   └── main.js           # Точка входа JavaScript-логики, запускающейся в браузере
-│
-├── .gitignore             # Список файлов и папок, игнорируемых Git
-├── .prettierignore        # Список файлов и папок, игнорируемых Prettier
-├── eslint.config.js       # Конфигурация ESLint (проверка JS/JSX-кода)
-├── jsconfig.json          # Настройки путей и автодополнения для JS (используется IDE и сборщиком)
-├── minista.config.js      # Конфигурация Minista
-├── package.json           # Зависимости проекта, скрипты, метаинформация
-├── package-lock.json      # Зафиксированные версии всех установленных пакетов
-├── postcss.config.js      # Конфигурация PostCSS (preset-env, pxtorem и пр.)
-├── prettier.config.js     # Настройки автоформатирования кода (Prettier)
-├── README.md              # Документация по проекту (вы сейчас её читаете)
-└── stylelint.config.js    # Конфигурация Stylelint (проверка CSS/SCSS)
+src/
+├── assets/      # Optimized images, fonts, and SVG icons
+├── components/  # Atomic UI elements (Button, Icon, Grid)
+├── layouts/     # High-level structural components (Header, Footer, Section)
+├── modules/     # JavaScript classes and logic (SliderCollection)
+├── sections/    # Full-width page sections (Hero, Categories, Recipes)
+├── styles/      # Global styles, variables, and SCSS helpers
+└── pages/       # Entry points for different routes
 ```
 
-## 🧠 Что особенно удобно
+## ✨ Features
 
-- JSX без React — почти как HTML, но мощнее: можно вставлять JS и выносить куски разметки в отдельные файлы
-- [Vite](https://vite.dev/) под капотом — [Minista](https://minista.qranoko.jp/) использует [Vite](https://vite.dev/) как сборщик, так что всё быстро, современно и с поддержкой HMR
-- Компонент `Icon` с автонастройкой цвета. Поверх встроенного `<Icon>` реализован `src/components/Icon.jsx`, который: прокидывает `fill`, `stroke` и использует `currentColor`, чтобы цвет SVG-иконки подстраивался под цвет текста и корректно работал как с fill, так и со stroke-иконками.
-- Мощные Sass-хелперы — в `src/styles/helpers/` лежат:
-  - функции (`fluid`, `fluid-to-laptop`)
-  - миксины для медиа-запросов (`mobile`, `mobile-above`, `hover` и т. п.)
-  - переменные и константы
-  - Утилитарные CSS-классы — для типовых задач:
-    - `.container`
-    - `.visually-hidden`
-    - `.visible-tablet`, `.hidden-tablet`
-    - `.visible-mobile`, `.hidden-mobile`
+- **Responsive Design**: Fluid layouts that adapt perfectly from mobile to ultra-wide displays.
+- **Modular Component Architecture**: Highly reusable and independent UI blocks.
+- **Performance Optimized**: Static generation for near-instant page loads.
+- **Dynamic Sliders**: Interactive hero and recipe sliders with hardware-accelerated transitions.
+- **Clean Navigation**: Intuitive UX for seamless content discovery.
 
-## 📚 Документация Minista
+## 🚀 Installation & Usage
 
-Если вы не знакомы с Minista — обязательно загляните в официальную документацию:
+### 1. Clone the repository
 
-> 🔗 https://minista.qranoko.jp/docs/
+```bash
+git clone https://github.com/sabyrkazen/foodieland.git
+cd foodieland
+```
 
-Рекомендуем к прочтению:
+### 2. Install dependencies
 
-- 📄 Конфигурация Minista — `minista.config.js`
-  - https://minista.qranoko.jp/docs/config-file
-- 🧱 Глобальный layout — `src/global.jsx`
-  - https://minista.qranoko.jp/docs/global
-- 🧾 Метаданные страниц — переменная `metadata` в `src/pages/**.jsx`
-  - https://minista.qranoko.jp/docs/metadata
-- 🧠 Компонент `<Head>` — для добавления `<meta>`, `<title>` и прочего
-  - https://minista.qranoko.jp/docs/head
-- 🖼 Компонент `<Image>` — для оптимизированной загрузки изображений
-  - https://minista.qranoko.jp/docs/image
-- 🧩 Компонент `<Icon>` — SVG-спрайт и иконки
-  - https://minista.qranoko.jp/docs/svg-sprite-icon
-    > ☝️ В нашем шаблоне поверх встроенного `<Icon>` реализован компонент-обёртка `src/components/Icon.jsx`.
-    > Он автоматически прокидывает нужные атрибуты (`fill`, `stroke`) и использует `currentColor` —
-    > чтобы удобно управлять цветом иконки через CSS, независимо от оригинальной реализации SVG.
+```bash
+npm install
+```
 
-## 📝 Советы
+### 3. Run locally
 
-Для TypeScript-версии используйте `npm create friendly-frontend@latest -- --ts`
+```bash
+npm run start
+```
 
-## ❓ FAQ
+### 4. Build for production
 
-### Почему используется JSX без React?
+```bash
+npm run build
+```
 
-Благодаря Minista. Это позволяет использовать знакомый синтаксис, но без нагрузки от React — идеально для статичных и маркетинговых сайтов.
+## 🏁 Conclusion
 
-### Это можно развернуть на Netlify/Vercel?
+Foodieland represents my commitment to building high-quality frontend products that balance technical excellence with
+user-centric design. By applying rigorous architectural standards and modern engineering practices, I’ve created a
+platform that is not only maintainable and scalable but also provides a world-class experience for the end-user. This
+project is a milestone in my professional growth as a frontend engineer.
 
-Да. Это обычная статика — после `npm run build` можно деплоить куда угодно.
-
-## Обратная связь
-
-Если нашли баг или хотите предложить улучшение — открывайте issue или присылайте pull request.
-
-GitHub: https://github.com/aleksanderlamkov/friendly-frontend-starter
-
-## Лицензия
-
-MIT
-
----
-
-**Автор:** [Александр Ламков](https://www.youtube.com/@AleksanderLamkov)
+Developed with ❤️ by Sabyrka
