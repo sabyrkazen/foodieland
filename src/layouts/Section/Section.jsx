@@ -15,11 +15,8 @@ export const Section = ({
   descriptionClassName,
 }) => {
   return (
-    <section
-      className={clsx('section', 'container', className)}
-      aria-labelledby={titleId}
-    >
-      <header className={clsx('section__header', headerClassName)}>
+    <section className={clsx('section', className)} aria-labelledby={titleId}>
+      <header className={clsx('section__header', 'container', headerClassName)}>
         <h2 className="section__title" id={titleId}>
           {title}
         </h2>
@@ -34,7 +31,7 @@ export const Section = ({
           </Button>
         )}
       </header>
-      <div className="section__body">{children}</div>
+      <div className="section__body container">{children}</div>
     </section>
   )
 }
