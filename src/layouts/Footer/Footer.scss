@@ -1,52 +1,75 @@
 .footer {
-  padding-block: 80px 48px;
-
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    row-gap: 48px;
-  }
-
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 400;
-  }
+  padding-top: var(--section-padding-y);
 
   &__body {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--color-gray);
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 24px;
+    }
+  }
+
+  &__info {
+    display: flex;
     flex-direction: column;
+    align-items: start;
     row-gap: 16px;
+
+    @include tablet {
+      align-items: center;
+    }
   }
 
   &__menu {
-    &-list {
-      display: flex;
-      column-gap: 60px;
+    @include mobile {
+      align-self: center;
+    }
+  }
+
+  &__menu-list {
+    display: flex;
+    column-gap: 60px;
+    font-weight: 500;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
     }
   }
 
   &__extra {
-    position: relative;
-    display: flex;
-  }
+    padding-block: fluid(48, 24);
 
-  &__copyright {
-    position: absolute;
-    left: 50%;
-    margin-inline: auto;
-    font-family: var(--font-family-copyright), sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    translate: -50%;
+    @include tablet-above {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
 
-    & span {
-      color: var(--color-accent);
+    @include tablet {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      row-gap: 20px;
     }
   }
 
+  &__copyright {
+    grid-column-start: 2;
+    display: flex;
+    justify-content: center;
+  }
+
   &__socials {
-    margin-left: auto;
+    grid-column-start: 3;
+    display: flex;
+    justify-content: end;
   }
 }

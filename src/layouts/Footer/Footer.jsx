@@ -11,17 +11,17 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__inner container">
-        <header className="footer__header">
-          <div className="footer__body">
+        <div className="footer__body">
+          <div className="footer__info">
             <Logo className="footer__logo" />
-            <div className="footer__subtitle">
+            <div className="footer__description">
               <p>Lorem ipsum dolor sit amet, consectetuipisicing elit,</p>
             </div>
           </div>
           <nav className="footer__menu">
             <ul className="footer__menu-list">
               {menuItems.map(({ label, href }) => (
-                <li key={href} className="footer__menu-item">
+                <li className="footer__menu-item" key={label}>
                   <a className="footer__menu-link" href={href}>
                     {label}
                   </a>
@@ -29,12 +29,14 @@ export const Footer = () => {
               ))}
             </ul>
           </nav>
-        </header>
+        </div>
         <div className="footer__extra">
           <div className="footer__copyright">
-            <p>
-              © 2020 Flowbase. Powered by <span>Webflow</span>
-            </p>
+            © <time dateTime={currentYear}>{currentYear}</time> Flowbase.
+            Powered by&nbsp;
+            <a href="/" target="_blank">
+              Webflow
+            </a>
           </div>
           <Socials className="footer__socials" />
         </div>
