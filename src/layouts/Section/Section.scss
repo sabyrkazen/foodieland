@@ -1,6 +1,7 @@
 .section {
   display: grid;
   row-gap: fluid(80, 40);
+  margin-block: var(--section-padding-y);
   padding-block: var(--section-padding-y);
 
   &__title {
@@ -10,7 +11,7 @@
   }
 
   &__description {
-    @include mobile {
+    @include tablet {
       text-align: center;
     }
   }
@@ -28,6 +29,16 @@
 
       @include mobile {
         display: contents;
+      }
+    }
+
+    &--justify {
+      flex-direction: row;
+      justify-content: space-between;
+      column-gap: 150px;
+
+      @include laptop {
+        flex-direction: column;
       }
     }
   }
