@@ -11,7 +11,7 @@ export const Subscribe = () => {
           <p>
             Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqut enim ad
-            minim{' '}
+            minim
           </p>
         </div>
         <form className="subscribe__form">
