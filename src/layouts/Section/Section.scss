@@ -4,14 +4,14 @@
   padding-block: var(--section-padding-y);
 
   &__title {
-    &--daily-recipes {
-      max-width: 520px;
+    @include mobile {
+      text-align: center;
     }
   }
 
   &__description {
-    &--daily-recipes {
-      max-width: 620px;
+    @include mobile {
+      text-align: center;
     }
   }
 

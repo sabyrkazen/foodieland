@@ -17,7 +17,7 @@ export const Section = ({
 }) => {
   return (
     <section className={clsx('section', className)} aria-labelledby={titleId}>
-      <header className={clsx('section__header', 'container', headerClassName)}>
+      <header className={clsx('section__header container', headerClassName)}>
         <h2 className={clsx('section__title', titleClassName)} id={titleId}>
           {title}
         </h2>
