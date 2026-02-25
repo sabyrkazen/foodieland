@@ -10,8 +10,7 @@ export const Subscribe = () => {
         <div className="subscribe__description">
           <p>
             Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqut enim ad
-            minim
+            tempor incididunt ut labore et dolore magna aliqut enim ad minim
           </p>
         </div>
         <form className="subscribe__form">
