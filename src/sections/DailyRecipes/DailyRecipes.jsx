@@ -4,8 +4,6 @@ import { DailyRecipeCard } from '@components/DailyRecipeCard'
 
 import { dailyRecipes } from './daily-recipes.data'
 
-import './DailyRecipes.scss'
-
 export const DailyRecipes = () => {
   return (
     <Section

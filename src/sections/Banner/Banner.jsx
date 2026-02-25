@@ -17,7 +17,9 @@ export const Banner = () => {
               minim
             </p>
           </div>
-          <Button className="banner__button" href="/">Learn More</Button>
+          <Button className="banner__button" href="/">
+            Learn More
+          </Button>
         </div>
         <img
           className="banner__image"
